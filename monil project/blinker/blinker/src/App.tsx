@@ -11,6 +11,10 @@ import DoctorPage from "./DoctorPage";
 import FAQPage from "./FAQPage";
 import ContactPage from "./ContactPage";
 
+import Comprehensive from "./IMG_4979.webp";
+import Pediatric from "./PediatricEyecare_20221213_4322.webp";
+import Cataract from "./cataract-senior.webp";
+
 // ----------------------
 // Navbar Component
 // ----------------------
@@ -95,10 +99,10 @@ const Footer = () => (
 // Static Content Lists
 // ----------------------
 const servicesList = [
-  { title: "Comprehensive Eye Exams", image: "/src/IMG_4979.webp" },
+  { title: "Comprehensive Eye Exams", image: {Comprehensive} },
   { title: "LASIK & Laser Surgery", image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528", desc: "Modern vision correction procedures." },
-  { title: "Pediatric Eye Care", image: "/src/PediatricEyecare_20221213_4322.webp" },
-  { title: "Cataract Surgery", image: "/src/cataract-senior.webp" }
+  { title: "Pediatric Eye Care", image: {Pediatric}},
+  { title: "Cataract Surgery", image: {Cataract}}
 ];
 
 const testimonials = [
