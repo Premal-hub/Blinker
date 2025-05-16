@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import doctorPhoto from "./PHOTO-2025-05-16-02-25-37.jpg";
 
 const Doctor: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -29,7 +30,7 @@ const Doctor: React.FC = () => {
           >
             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-[#8cb59b] via-[#7a9f90] to-[#6e8e81] opacity-60 blur-3xl"></div>
             <img
-              src="/src/PHOTO-2025-05-16-02-25-37.jpg"
+              src={doctorPhoto}
               alt="Dr. Monil Champaneria"
               loading="lazy"
               className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg relative z-10"
