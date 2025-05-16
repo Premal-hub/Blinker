@@ -32,13 +32,11 @@ const Navbar = () => {
         <div className="font-extrabold text-2xl md:text-3xl text-[#3c544b]" style={{ letterSpacing: '.03em', fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
           <span className="font-black">Blinkers</span>
         </div>
-
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-[#3c544b] focus:outline-none">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
-
         <ul className="hidden md:flex gap-6 font-medium">
           <li><Link to="/" className={linkClass('/')}>Home</Link></li>
           <li><Link to="/about" className={linkClass('/about')}>About</Link></li>
@@ -48,7 +46,6 @@ const Navbar = () => {
           <li><Link to="/contact" className={linkClass('/contact')}>Contact</Link></li>
         </ul>
       </div>
-
       {isOpen && (
         <div className="md:hidden mt-4">
           <ul className="flex flex-col gap-4 font-medium">
@@ -85,7 +82,8 @@ const Footer = () => (
           >
             Get Directions
           </a>
-        </p><br />
+        </p>
+        <br />
         <p>
           Contact us: <a href="tel:+919860849086" className="hover:underline font-medium">+91 98608 49086</a>
         </p>
@@ -99,10 +97,10 @@ const Footer = () => (
 // Static Content Lists
 // ----------------------
 const servicesList = [
-  { title: "Comprehensive Eye Exams", image={Comprehensive} },
+  { title: "Comprehensive Eye Exams", image: Comprehensive, desc: "Thorough eye health and vision assessments." },
   { title: "LASIK & Laser Surgery", image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528", desc: "Modern vision correction procedures." },
-  { title: "Pediatric Eye Care", image={Pediatric}},
-  { title: "Cataract Surgery", image={Cataract}}
+  { title: "Pediatric Eye Care", image: Pediatric, desc: "Specialized care for children's vision." },
+  { title: "Cataract Surgery", image: Cataract, desc: "Advanced cataract removal and lens implants." }
 ];
 
 const testimonials = [
