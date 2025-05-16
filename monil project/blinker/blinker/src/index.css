@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-brand: #7a9f90;
+  --brand-contrast: #3c544b;
+  --brand-light: #eaf2ee;
+  --brand-white: #fff;
+
+  --background: 156 17% 92%; /* #eaf2ee */
+  --foreground: 156 17% 20%; /* #3c544b */
+  --card: 156 17% 92%; /* #eaf2ee */
+  --card-foreground: 156 17% 20%; /* #3c544b */
+  --popover: 156 17% 92%; /* #eaf2ee */
+  --popover-foreground: 156 17% 20%; /* #3c544b */
+  --primary: 156 17% 58%; /* #7a9f90 */
+  --primary-foreground: 0 0% 100%; /* #fff */
+  --secondary: 156 17% 80%; /* lighter #7a9f90 */
+  --secondary-foreground: 156 17% 20%; /* #3c544b */
+  --muted: 156 17% 85%; /* #d3e3db */
+  --muted-foreground: 156 17% 40%; /* #6b8c7c */
+  --accent: 156 17% 58%; /* #7a9f90 */
+  --accent-foreground: 0 0% 100%; /* #fff */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 156 17% 80%; /* lighter #7a9f90 */
+  --input: 156 17% 80%; /* lighter #7a9f90 */
+  --ring: 156 17% 58%; /* #7a9f90 */
+  --radius: 0.5rem;
+  --chart-1: 12 76% 61%;
+  --chart-2: 173 58% 39%;
+  --chart-3: 197 37% 24%;
+  --chart-4: 43 74% 66%;
+  --chart-5: 27 87% 67%;
+}
+
+.dark {
+  --background: 156 17% 20%; /* #3c544b */
+  --foreground: 0 0% 100%; /* #fff */
+  --card: 156 17% 20%; /* #3c544b */
+  --card-foreground: 0 0% 100%; /* #fff */
+  --popover: 156 17% 20%; /* #3c544b */
+  --popover-foreground: 0 0% 100%; /* #fff */
+  --primary: 156 17% 58%; /* #7a9f90 */
+  --primary-foreground: 0 0% 100%; /* #fff */
+  --secondary: 156 17% 30%; /* darker #7a9f90 */
+  --secondary-foreground: 0 0% 100%; /* #fff */
+  --muted: 156 17% 25%; /* #2a3a34 */
+  --muted-foreground: 156 17% 70%; /* #b2cfc0 */
+  --accent: 156 17% 58%; /* #7a9f90 */
+  --accent-foreground: 0 0% 100%; /* #fff */
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 156 17% 30%; /* darker #7a9f90 */
+  --input: 156 17% 30%; /* darker #7a9f90 */
+  --ring: 156 17% 58%; /* #7a9f90 */
+  --chart-1: 220 70% 50%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
+}
+
+body {
+  background: var(--brand-light);
+  color: var(--brand-contrast);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.hero-bg {
+  background: var(--primary-brand);
+}
+
+.logo-shadow {
+  filter: drop-shadow(0 2px 12px rgba(60,85,75,0.16));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: var(--brand-light);
+    color: var(--brand-contrast);
+  }
+}

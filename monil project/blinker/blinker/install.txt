@@ -1,0 +1,91 @@
+| Item                                    | Status                                                      |
+| --------------------------------------- | ----------------------------------------------------------- |
+| `framer-motion` installed               | ✅ `npm install framer-motion`                               |
+| `react-intersection-observer` installed | ✅ `npm install react-intersection-observer`                 |
+| `motion` properly imported              | ✅ `import { motion } from "framer-motion"`                  |
+| `useInView` imported correctly          | ✅ `import { useInView } from "react-intersection-observer"` |
+
+
+npm install framer-motion react-parallax-tilt
+
+
+✅ Creative Upgrades Added:
+Glassmorphism Hero Section
+Parallax Background Effects
+Animated Floating Elements
+Framer Motion Scroll Animations
+Tilt Cards for Services
+Soft Gradient Transitions
+Glow-on-hover Buttons
+3D-Like Doctor Cards
+
+
+
+head:-
+
+import About from "./About";
+import ServicesPage from "./ServicesPage";
+import DoctorPage from "./DoctorPage";
+import FAQPage from "./FAQPage";
+import ContactPage from "./ContactPage";
+
+
+
+const Navbar = () => (
+  <nav className="bg-white border-b border-[#7a9f90] py-4 px-8 flex items-center justify-between sticky top-0 z-30 shadow-sm">
+    <div className="font-extrabold text-2xl md:text-3xl text-[#3c544b] tracking-tight" style={{ letterSpacing: '.03em', fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
+      <span className="font-black">blinkers</span>
+    </div>
+    <ul className="flex gap-6 text-[#3c544b] font-medium">
+      <li><Link to="/" className="hover:text-[#7a9f90]">Home</Link></li>
+      <li><Link to="/about" className="hover:text-[#7a9f90]">About</Link></li>
+      <li><Link to="/services" className="hover:text-[#7a9f90]">Services</Link></li>
+      <li><Link to="/doctor" className="hover:text-[#7a9f90]">Doctors</Link></li>
+      <li><Link to="/faq" className="hover:text-[#7a9f90]">FAQ</Link></li>
+      <li><Link to="/contact" className="hover:text-[#7a9f90]">Contact</Link></li>
+    </ul>
+  </nav>
+);    
+
+
+// ✅ Only ONE App component here:
+function App() {
+  return (
+    <Router>
+      <div className="font-sans bg-[#eaf2ee] min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/doctor" element={<DoctorPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+
+
+footer:
+
+
+const Footer = () => (
+  <footer className="bg-[#3c544b] text-white py-10 px-4 md:px-16 mt-10">
+    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div className="font-bold text-lg md:text-xl tracking-tight" style={{ fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
+        <span className="font-black">blinkers</span> Eye Care Clinic
+      </div>
+      <div>
+        <p className="text-xs mt-2">123 Vision Ave, YourCity – +1 234-567-8901</p>
+        <p className="text-xs mt-1">© 2025 blinkers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+);
+
+
+
