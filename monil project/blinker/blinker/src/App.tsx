@@ -14,7 +14,7 @@ import ContactPage from "./ContactPage";
 import Comprehensive from "./IMG_4979.webp";
 import Pediatric from "./PediatricEyecare_20221213_4322.webp";
 import Cataract from "./cataract-senior.webp";
-import Logo from "."; 
+import Logo from "./Screenshot 2025-02-04 at 7.44.56 PM.png"; 
 
 // ----------------------
 // Navbar Component
