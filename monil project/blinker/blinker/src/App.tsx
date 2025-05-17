@@ -14,6 +14,7 @@ import ContactPage from "./ContactPage";
 import Comprehensive from "./IMG_4979.webp";
 import Pediatric from "./PediatricEyecare_20221213_4322.webp";
 import Cataract from "./cataract-senior.webp";
+import Logo from "."; 
 
 // ----------------------
 // Navbar Component
@@ -29,9 +30,11 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-b border-[#7a9f90] py-4 px-8 sticky top-0 z-30 shadow-sm">
       <div className="flex items-center justify-between">
-        <div className="font-extrabold text-2xl md:text-3xl text-[#3c544b]" style={{ letterSpacing: '.03em', fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
-          <span className="font-black">Blinkers</span>
-        </div>
+        <div className="flex items-center font-extrabold text-2xl md:text-3xl text-[#3c544b]"
+     style={{ letterSpacing: '.03em', fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
+  <img src={Logo} alt="Blinkers Logo" className="w-10 h-10 mr-3 rounded-full" />
+  <span className="font-black">Blinkers</span>
+</div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-[#3c544b] focus:outline-none">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
