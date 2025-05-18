@@ -16,6 +16,10 @@ import Pediatric from "./PediatricEyecare_20221213_4322.webp";
 import Cataract from "./cataract-senior.webp";
 import Logo from "./Screenshot 2025-02-04 at 7.44.56 PM.png"; 
 
+//im;port scroll up
+
+import ScrollToTop from "./ScrollToTop";
+
 // ----------------------
 // Navbar Component
 // ----------------------
@@ -64,6 +68,27 @@ const Navbar = () => {
     </nav>
   );
 };
+
+//scrollup page
+
+const App = () => (
+  <Router>
+    <Navbar />
+    <ScrollToTop />
+    <main className="min-h-[calc(100vh-8rem)]">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/doctor" element={<DoctorPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<h2 className="p-8 text-center text-red-600">404 - Page Not Found</h2>} />
+      </Routes>
+    </main>
+    <Footer />
+  </Router>
+);
 
 // ----------------------
 // Footer Component
