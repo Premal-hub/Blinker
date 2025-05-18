@@ -72,26 +72,6 @@ const Navbar = () => {
 //scrollup page
 
 
-const App = () => (
-  <Router>
-    <ScrollToTop />   {/* <-- Add this line! */}
-    <Navbar />
-    <main className="min-h-[calc(100vh-8rem)]">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/doctor" element={<DoctorPage />} />
-        <Route path="/faq" element={<FAQPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<h2 className="p-8 text-center text-red-600">404 - Page Not Found</h2>} />
-      </Routes>
-    </main>
-    <Footer />
-  </Router>
-);
-
-
 
 
 
@@ -275,5 +255,10 @@ const App = () => (
     <Footer />
   </Router>
 );
+
+
+///================
+
+
 
 export default App;
