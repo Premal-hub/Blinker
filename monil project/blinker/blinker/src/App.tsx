@@ -240,6 +240,7 @@ const Home = () => (
 // ----------------------
 const App = () => (
   <Router>
+    <ScrollToTop /> {/* This triggers scroll to top on every route change */}
     <Navbar />
     <main className="min-h-[calc(100vh-8rem)]">
       <Routes>
@@ -255,9 +256,6 @@ const App = () => (
     <Footer />
   </Router>
 );
-
-
-///================
 
 
 
