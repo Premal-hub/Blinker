@@ -130,7 +130,7 @@ const servicesList = [
   { title: "Comprehensive Eye Exams", image: Comprehensive, desc: "Thorough eye health and vision assessments." },
   { title: "Optical Services", image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528", desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
   { title: "Pediatric Eye Care", image: Pediatric, desc: "Specialized care for children's vision." },
- { title: "Contact Lens", image: Comprehensive, desc: "Precise fittings, wide lens options & clear vision every day." },
+ { title: "Contact Lens", image: Cataract, desc: "Precise fittings, wide lens options & clear vision every day." },
 
 ];
 
