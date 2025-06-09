@@ -36,11 +36,13 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center font-extrabold text-2xl md:text-3xl text-[#3c544b]"
      style={{ letterSpacing: '.03em', fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
+ <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-1 flex items-center justify-center">
   <img
-  src={Logo}
-  alt="Blinkers Logo"
-  className="w-12 h-12 object-cover rounded-full mb-4 md:mb-0"
-/>
+    src={Logo}
+    alt="Blinkers Logo"
+    className="max-w-full max-h-full object-contain"
+  />
+</div>
 
   <Link to="/" className="font-black ">Blinkers</Link>
 
@@ -88,11 +90,14 @@ const Footer = () => (
   <footer className="bg-[#3c544b] text-white py-10 px-4 md:px-16 mt-10">
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
       <div className="font-bold text-lg md:text-xl tracking-tight" style={{ fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
-      <img
-  src={Logo}
-  alt="Blinkers Logo"
-  className="w-12 h-12 object-cover rounded-full mb-4 md:mb-0"
-/>
+     <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-1 flex items-center justify-center">
+  <img
+    src={Logo}
+    alt="Blinkers Logo"
+    className="max-w-full max-h-full object-contain"
+  />
+</div>
+
 
         <span className="font-black">blinkers</span> Eye Care 
       </div>
