@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center font-extrabold text-2xl md:text-3xl text-[#3c544b]"
      style={{ letterSpacing: '.03em', fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
-  <img src={Logo} alt="Blinkers Logo" className="w-12 h-12 object-cover rounded-full mb-4 md:mb-0"/>
+  <img src={Logo} alt="Blinkers Logo" className="w-12 h-12 object-contain rounded-full bg-white p-1 mb-4 md:mb-0"/>
   <Link to="/" className="font-black hover:underline">Blinkers</Link>
 
 </div>
@@ -83,7 +83,7 @@ const Footer = () => (
   <footer className="bg-[#3c544b] text-white py-10 px-4 md:px-16 mt-10">
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
       <div className="font-bold text-lg md:text-xl tracking-tight" style={{ fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
-       <img src={Logo} alt="Blinkers Logo" className="w-12 h-12 object-cover rounded-full mb-4 md:mb-0"/>
+      <img src={Logo} alt="Blinkers Logo" className="w-12 h-12 object-contain rounded-full bg-white p-1 mb-4 md:mb-0"/>
         <span className="font-black">blinkers</span> Eye Care 
       </div>
       <div>
