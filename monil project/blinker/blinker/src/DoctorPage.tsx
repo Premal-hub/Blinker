@@ -31,7 +31,7 @@ const Doctor: React.FC = () => {
             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-[#8cb59b] via-[#7a9f90] to-[#6e8e81] opacity-60 blur-3xl"></div>
             <img
               src={doctorPhoto}
-              alt="Dr. Monil Champaneria"
+              alt=" Monil Champaneria"
               loading="lazy"
               className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg relative z-10"
             />
@@ -47,10 +47,11 @@ const Doctor: React.FC = () => {
               id="doctor-title"
               className="text-5xl font-extrabold text-[#7a9f90] drop-shadow-md"
             >
-              Dr. Monil Champaneria
+              Optom.Monil Champaneria
             </h2>
             <p className="text-xl text-[#405941] font-semibold mt-2">
-              M.D., Ophthalmology – AIIMS, Delhi
+             B.Optom (Gold Medalist), Pune.
+             Fellow of Sankara Netralaya, Chennai.
             </p>
             <p
               className="italic text-[#4b5d44] mt-4 text-lg"
@@ -62,33 +63,52 @@ const Doctor: React.FC = () => {
         </div>
 
         {/* Description */}
-        <motion.div
-          className="mt-12 text-[#364b3c] text-lg leading-relaxed max-w-3xl mx-auto text-justify"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-        >
-          With over{" "}
-          <strong className="text-[#527a65] font-semibold">
-            15 years of clinical experience
-          </strong>
-          , Dr. Champaneria stands as a pillar in the eye care field. Her
-          specialties include{" "}
-          <span className="font-semibold text-[#405941]">
-            pediatric ophthalmology
-          </span>
-          , advanced{" "}
-          <span className="font-semibold text-[#405941]">
-            laser vision correction
-          </span>
-          , and{" "}
-          <span className="font-semibold text-[#405941]">
-            glaucoma management
-          </span>
-          . Known for her empathetic approach and clinical precision, she’s
-          dedicated to offering personalized vision solutions based on the
-          latest advancements in eye care.
-        </motion.div>
+<motion.div
+  className="mt-12 text-[#364b3c] text-lg leading-relaxed max-w-3xl mx-auto text-justify"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.6, duration: 0.8 }}
+>
+  <p>
+    <span className="font-semibold text-[#405941]">Blinkers Eye Clinic and Optical Showroom</span><br /><br />
+    Founded in 2023, Blinkers is the brainchild of 
+    <span className="font-semibold text-[#527a65]"> Monil Champaneria</span>, a passionate and highly skilled optometrist dedicated to delivering exceptional, personalized eye care in Surat, India.
+  </p>
+  <br />
+  <p>
+    Monil completed his Bachelor’s degree in Optometry from the esteemed 
+    <span className="font-semibold text-[#527a65]"> Bharati Vidyapeeth, Pune (2017–2021)</span>. He then pursued advanced clinical training at 
+    <span className="font-semibold text-[#527a65]"> Sankara Nethralaya, Chennai</span>, completing a prestigious 
+    <span className="font-semibold text-[#527a65]"> Postgraduate Fellowship in Specialty Contact Lenses</span> in 2022. His pursuit of excellence further led him to the 
+    <span className="font-semibold text-[#527a65]"> L.V. Prasad Eye Institute, Hyderabad</span>, where he received intensive training in scleral lenses and PROSE lenses, gaining hands-on experience in managing some of the most complex corneal and ocular surface diseases.
+  </p>
+  <br />
+  <p>
+    With a deep-rooted expertise in fitting 
+    <span className="font-semibold text-[#405941]"> specialty contact lenses</span> for conditions like 
+    <span className="font-semibold text-[#405941]"> keratoconus</span>, 
+    <span className="font-semibold text-[#405941]"> corneal trauma</span>, 
+    <span className="font-semibold text-[#405941]"> severe dryness</span>, and 
+    <span className="font-semibold text-[#405941]"> post-surgical corneas</span>, Monil brings a rare combination of clinical precision and compassionate care.
+  </p>
+  <br />
+  <p>
+    His professional interests also include 
+    <span className="font-semibold text-[#405941]"> orthokeratology (Ortho-K)</span> — a non-surgical, overnight vision correction technique — and 
+    <span className="font-semibold text-[#405941]"> myopia control</span>, especially for children and young adults.
+  </p>
+  <br />
+  <p>
+    At Blinkers, the goal is simple: to provide 
+    <span className="font-semibold text-[#527a65]"> world-class optometric services</span> locally — from 
+    <span className="font-semibold text-[#405941]"> routine eye exams</span> to 
+    <span className="font-semibold text-[#405941]"> advanced lens solutions</span> — all under one roof, backed by 
+    <span className="font-semibold text-[#527a65]"> knowledge</span>, 
+    <span className="font-semibold text-[#527a65]"> integrity</span>, and 
+    <span className="font-semibold text-[#527a65]"> care</span>.
+  </p>
+</motion.div>
+
 
         {/* Achievements */}
         <motion.div
@@ -152,7 +172,7 @@ const Doctor: React.FC = () => {
                   Book Consultation
                 </h2>
                 <p className="mb-6 text-[#364b3c]">
-                  To book a consultation with Dr. Monil Champaneria, please call
+                  To book a consultation with  Monil Champaneria, please call
                   us at{" "}
                   <a
                     href="tel:+1234567890"
