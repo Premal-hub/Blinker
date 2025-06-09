@@ -54,11 +54,11 @@ const Navbar = () => {
         </div>
         <ul className="hidden md:flex gap-6 font-medium">
           <li><Link to="/" className={linkClass('/')}>Home</Link></li>
-          <li><Link to="/about" className={linkClass('/about')}>About</Link></li>
-          <li><Link to="/services" className={linkClass('/services')}>Services</Link></li>
+          <li><Link to="/about" className={linkClass('/about')}>About us</Link></li>
+          <li><Link to="/services" className={linkClass('/services')}>Servies</Link></li>
           <li><Link to="/doctor" className={linkClass('/doctor')}>Doctors</Link></li>
-          <li><Link to="/faq" className={linkClass('/faq')}>Faq</Link></li>
-          <li><Link to="/contact" className={linkClass('/contact')}>Contact</Link></li>
+          <li><Link to="/faq" className={linkClass('/faq')}>FAQ</Link></li>
+          <li><Link to="/contact" className={linkClass('/contact')}>Contact us</Link></li>
         </ul>
       </div>
       {isOpen && (
