@@ -36,13 +36,13 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center font-extrabold text-2xl md:text-3xl text-[#3c544b]"
      style={{ letterSpacing: '.03em', fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
- <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-1 flex items-center justify-center">
+{/*  <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-1 flex items-center justify-center">
   <img
     src={Logo}
     alt="Blinkers Logo"
     className="max-w-full max-h-full object-contain"
   />
-</div>
+</div> */}
 
   <Link to="/" className="font-black ">Blinkers</Link>
 
