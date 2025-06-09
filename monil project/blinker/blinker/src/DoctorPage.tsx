@@ -178,14 +178,14 @@ const Doctor: React.FC = () => {
                     href="tel:+1234567890"
                     className="text-[#527a65] underline hover:text-[#405941]"
                   >
-                    +1 234 567 890
+                    +91 98608 49086
                   </a>{" "}
                   or email{" "}
                   <a
                     href="mailto:contact@blinkersclinic.com"
                     className="text-[#527a65] underline hover:text-[#405941]"
                   >
-                    contact@blinkersclinic.com
+                    blinkers@gmail.com
                   </a>
                   .
                 </p>
