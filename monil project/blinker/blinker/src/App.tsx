@@ -36,8 +36,9 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center font-extrabold text-2xl md:text-3xl text-[#3c544b]"
      style={{ letterSpacing: '.03em', fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
-  <img src={Logo} alt="Blinkers Logo" className="w-10 h-10 mr-3 rounded-full" />
-  <span className="font-black">Blinkers</span>
+ <img src={Logo} alt="Blinkers Logo" className="w-24 h-auto object-contain mb-4 md:mb-0" />
+  <Link to="/" className="font-black hover:underline">Blinkers</Link>
+
 </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-[#3c544b] focus:outline-none">
@@ -82,6 +83,7 @@ const Footer = () => (
   <footer className="bg-[#3c544b] text-white py-10 px-4 md:px-16 mt-10">
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
       <div className="font-bold text-lg md:text-xl tracking-tight" style={{ fontFamily: 'Trebuchet MS, Inter, Segoe UI, Arial, sans-serif' }}>
+        <img src={Logo} alt="Blinkers Logo" className="w-24 h-auto object-contain mb-4 md:mb-0" />
         <span className="font-black">blinkers</span> Eye Care Clinic
       </div>
       <div>
@@ -111,9 +113,10 @@ const Footer = () => (
 // ----------------------
 const servicesList = [
   { title: "Comprehensive Eye Exams", image: Comprehensive, desc: "Thorough eye health and vision assessments." },
-  { title: "LASIK & Laser Surgery", image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528", desc: "Modern vision correction procedures." },
+  { title: "Optical Services", image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528", desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
   { title: "Pediatric Eye Care", image: Pediatric, desc: "Specialized care for children's vision." },
-  { title: "Cataract Surgery", image: Cataract, desc: "Advanced cataract removal and lens implants." }
+ { title: "Contact Lens", image: Comprehensive, desc: "Precise fittings, wide lens options & clear vision every day." },
+
 ];
 
 const testimonials = [
