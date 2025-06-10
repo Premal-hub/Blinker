@@ -44,8 +44,13 @@ const Navbar = () => {
   />
 </div> */}
 
-  <Link to="/" className="font-black ">Blinkers</Link>
-  <span className="text-sm text-[#527a65]">eye clinic & Optical showroom</span>
+  <Link to="/" className="font-black text-2xl text-[#364b3c] leading-tight">
+    Blinkers
+    </Link>
+    <div className="text-sm text-[#527a65] font-normal">
+      eye clinic & Optical showroom
+    </div>
+  
 
 </div>
         <div className="md:hidden">
