@@ -51,7 +51,7 @@ const Doctor: React.FC = () => {
             </h2>
             <p className="text-xl text-[#405941] font-semibold mt-2">
              B.Optom (Gold Medalist), Pune.
-             <br>Fellow of Sankara Netralaya, Chennai.
+             Fellow of Sankara Netralaya, Chennai.
             </p>
             <p
               className="italic text-[#4b5d44] mt-4 text-lg"
