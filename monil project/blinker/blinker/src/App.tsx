@@ -103,7 +103,7 @@ const Footer = () => (
       </div>
       <div>
         <p className="text-xs mt-2">
-          Shila Tower, BH/22 Samarth Park Apartments, near BAPS Hospital, Adajan, Surat, Gujarat 395009<br />
+         Blinkers- Eye Clinic and Optical Showroom    BH/22 Samarth Park ‘Shakti Tower’ Apartment Adajan Rd, opp. You Telecom, Adajan, Surat, Gujarat 395009<br />
           <a
             href="https://goo.gl/maps/4v8Z2x5J6Qk"
             target="_blank"
