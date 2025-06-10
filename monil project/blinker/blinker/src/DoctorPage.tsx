@@ -50,7 +50,7 @@ const Doctor: React.FC = () => {
               Optom. Monil Champaneria
             </h2>
             <p className="text-xl text-[#405941] font-semibold mt-2">
-             B.Optom (Gold Medalist), Pune.
+             B.Optom (Gold Medalist), Pune.<br></br>
              Fellow of Sankara Netralaya, Chennai.
             </p>
             <p
