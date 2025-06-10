@@ -47,11 +47,11 @@ const Doctor: React.FC = () => {
               id="doctor-title"
               className="text-5xl font-extrabold text-[#7a9f90] drop-shadow-md"
             >
-              Optom.Monil Champaneria
+              Optom. Monil Champaneria
             </h2>
             <p className="text-xl text-[#405941] font-semibold mt-2">
              B.Optom (Gold Medalist), Pune.
-             Fellow of Sankara Netralaya, Chennai.
+             <br>Fellow of Sankara Netralaya, Chennai.</br>
             </p>
             <p
               className="italic text-[#4b5d44] mt-4 text-lg"
@@ -124,7 +124,8 @@ const Doctor: React.FC = () => {
             Achievements
           </h3>
           <ul className="list-disc pl-8 space-y-3 text-[#4b5d44] text-lg font-medium">
-            <li>Gold Medalist in Ophthalmology from AIIMS, Delhi</li>
+            <li>Gold Medalist in Optometry from Bharati Vidyapeeth University, Pune</li>
+            <li>Fellow of Sankara Netralaya, Chennai</li>
             <li>Speaker & researcher at global eye care symposiums</li>
             <li>
               Recognized by the Indian Medical Association for leading rural
@@ -182,10 +183,10 @@ const Doctor: React.FC = () => {
                   </a>{" "}
                   or email{" "}
                   <a
-                    href="mailto:contact@blinkersclinic.com"
+                    href="mailto:blinkers.in@gmail.com"
                     className="text-[#527a65] underline hover:text-[#405941]"
                   >
-                    blinkers@gmail.com
+                    blinkers.in@gmail.com
                   </a>
                   .
                 </p>
