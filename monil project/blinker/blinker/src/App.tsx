@@ -45,15 +45,14 @@ const Navbar = () => {
 </div> */}
 
   <div className="flex items-center space-x-2">
-  <div className="flex flex-col leading-tight">
-    <Link to="/" className="font-black text-2xl text-[#364b3c]">
-      Blinkers
-    </Link>
-    <span className="text-sm text-[#527a65]">
-      eye clinic & Optical showroom
-    </span>
-  </div>
+  <Link to="/" className="font-black text-2xl text-[#364b3c]">
+    Blinkers
+  </Link>
+  <span className="text-sm text-[#527a65] relative top-1">
+    eye clinic & Optical showroom
+  </span>
 </div>
+
 
   
 
