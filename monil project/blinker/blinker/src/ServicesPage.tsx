@@ -138,37 +138,32 @@ icon: (
       </>
     ),
   },
-      // icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
 
 {
   title: "Vision Therapy for Amblyopia (Lazy Eye)",
   color: "from-yellow-400 to-yellow-600",
+   // icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
   icon: React.createElement(FaRegEye, {
     className: "text-red-600 w-8 h-8",
     "aria-hidden": "true",
   }),
-  description:
-    "Personalized therapy to improve eye coordination, depth perception, and visual performance beyond glasses.",
-  details: (
-    <>
-      <p>
-        <strong>We offer evidence-based vision therapy programs for:</strong>
-      </p>
-      <ul className="list-disc list-inside mt-2 text-gray-700">
-        <li>Children and adults with amblyopia (lazy eye)</li>
-        <li>Strabismus (eye turn) and binocular vision dysfunctions</li>
-        <li>Challenges in depth perception and visual coordination</li>
-      </ul>
-      <p className="mt-4">
-        Our therapy includes a combination of digital and interactive exercises designed to:
-      </p>
-      <ul className="list-disc list-inside mt-2 text-gray-700">
-        <li>Strengthen eye teaming and coordination</li>
-        <li>Enhance depth perception and visual tracking</li>
-        <li>Support functional vision improvement beyond glasses</li>
-      </ul>
-    </>
-  ),
+ description:
+  "We offer evidence-based vision therapy programs for children and adults with amblyopia, strabismus, or other binocular vision issues. Our digital and interactive therapy improves visual coordination, eye teaming, and depth perception — enhancing vision beyond just glasses.",
+details: (
+  <>
+    <p>
+      <strong>Key therapy benefits include:</strong>
+    </p>
+    <ul className="list-disc list-inside mt-2 text-gray-700">
+      <li><strong>Targeted for Amblyopia:</strong> Effective therapy for 'lazy eye' in both children and adults.</li>
+      <li><strong>Strabismus & Eye Turn:</strong> Improve alignment and coordination between both eyes.</li>
+      <li><strong>Enhanced Depth Perception:</strong> Train your brain and eyes to work together in 3D space.</li>
+      <li><strong>Binocular Vision Support:</strong> Strengthen eye teaming for better focus and tracking.</li>
+      <li><strong>Functional Vision Improvement:</strong> Go beyond glasses with lasting visual skill gains.</li>
+    </ul>
+  </>
+),
+
 },
   
 
