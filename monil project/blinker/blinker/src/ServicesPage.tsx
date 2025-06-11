@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 
 
 import {
@@ -18,38 +18,7 @@ const services = [
   {
     title: "Comprehensive Eye Exams",
     color: "from-blue-400 to-blue-600",
-  // icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
-
-
-icon: (
-  <div className="relative w-14 h-14 rounded-full bg-white/50 backdrop-blur-md border border-gray-200 shadow-sm flex items-center justify-center overflow-hidden">
-    <motion.svg
-      className="w-10 h-10 text-blue-600"
-      viewBox="0 0 64 64"
-      initial="open"
-      animate="blink"
-      variants={{
-        open: { scaleY: 1 },
-        blink: {
-          scaleY: [1, 0.1, 1],
-          transition: { repeat: Infinity, duration: 4, times: [0, 0.1, 1] }
-        }
-      }}
-    >
-      <path
-        d="M2 32c0 0 10-20 30-20s30 20 30 20-10 20-30 20S2 32 2 32z"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="4"
-      />
-      <circle cx="32" cy="32" r="8" fill="currentColor" />
-    </motion.svg>
-  </div>
-),
-
-
-
-
+   icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
 
     
     
