@@ -22,14 +22,7 @@ const services = [
 ),
 
 
-    {/* Glassy background circle */}
-    <div className="relative z-10 w-14 h-14 rounded-full bg-white/30 backdrop-blur-md shadow-xl border border-white/40 group-hover:scale-105 transition-transform duration-300">
-      <div className="w-full h-full flex items-center justify-center">
-        <FaEye className="text-blue-700 w-8 h-8 drop-shadow-md" aria-hidden="true" />
-      </div>
-    </div>
-  </div>
-),
+   
 
     
     description:
