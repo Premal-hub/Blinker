@@ -12,12 +12,16 @@ const services = [
   {
     title: "Comprehensive Eye Exams",
     color: "from-blue-400 to-blue-600",
-  icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
-
-
-
-   
-
+  // icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
+icon: (
+  <div className="relative w-16 h-16 rounded-full bg-white/20 backdrop-blur-md shadow-[inset_0_0_10px_rgba(255,255,255,0.3),_0_8px_20px_rgba(0,0,0,0.3)] border border-white/30 transform transition-all duration-500 hover:rotate-[15deg] hover:scale-110 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)]">
+    <div className="absolute inset-0 rounded-full animate-pulse bg-gradient-to-br from-blue-400/30 to-blue-700/10 blur-lg" />
+    <div className="relative flex items-center justify-center w-full h-full">
+      <FaEye className="text-blue-700 w-8 h-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] transition-transform duration-300 ease-in-out group-hover:scale-110" aria-hidden="true" />
+    </div>
+  </div>
+),
+    
     
     description:
       "Our detailed eye exams are more than just checking a prescription. We evaluate the overall health of your eyes using advanced equipment, assessing for refractive errors, binocular vision issues, eye pressure (for glaucoma risk), and signs of retinal or corneal diseases. Early detection is the key to long-term vision health.",
