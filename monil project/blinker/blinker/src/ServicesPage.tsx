@@ -78,14 +78,17 @@ const services = [
   },
       // icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
 
-  {
+{
   title: "Vision Therapy for Amblyopia (Lazy Eye)",
   color: "from-yellow-400 to-yellow-600",
-  icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
+  icon: React.createElement(FaRegEye, {
+    className: "text-red-600 w-8 h-8",
+    "aria-hidden": "true",
+  }),
   description:
     "Personalized therapy to improve eye coordination, depth perception, and visual performance beyond glasses.",
   details: (
-    <div>
+    <>
       <p>
         <strong>We offer evidence-based vision therapy programs for:</strong>
       </p>
@@ -102,7 +105,7 @@ const services = [
         <li>Enhance depth perception and visual tracking</li>
         <li>Support functional vision improvement beyond glasses</li>
       </ul>
-    </div>
+    </>
   ),
 },
   
