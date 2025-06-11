@@ -7,6 +7,7 @@ import {
   FaCheckCircle,
   FaSearchPlus,
   FaEyeDropper,
+  FaBrain,
 } from "react-icons/fa";
 
 // Service data structure for eye clinic
