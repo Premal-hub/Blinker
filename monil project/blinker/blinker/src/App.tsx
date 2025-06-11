@@ -78,7 +78,7 @@ const Navbar = () => {
             <li><Link to="/about" className={linkClass('/about')} onClick={() => setIsOpen(false)}>About</Link></li>
             <li><Link to="/services" className={linkClass('/services')} onClick={() => setIsOpen(false)}>Services</Link></li>
             <li><Link to="/doctor" className={linkClass('/doctor')} onClick={() => setIsOpen(false)}>Doctors</Link></li>
-            <li><Link to="/faq" className={linkClass('/faq')} onClick={() => setIsOpen(false)}>Faq</Link></li>
+            <li><Link to="/faq" className={linkClass('/faq')} onClick={() => setIsOpen(false)}>FAQ</Link></li>
             <li><Link to="/contact" className={linkClass('/contact')} onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>
         </div>
