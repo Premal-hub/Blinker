@@ -14,13 +14,21 @@ const services = [
     color: "from-blue-400 to-blue-600",
   // icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
 icon: (
-  <div className="relative w-16 h-16 rounded-full bg-white/20 backdrop-blur-md shadow-[inset_0_0_10px_rgba(255,255,255,0.3),_0_8px_20px_rgba(0,0,0,0.3)] border border-white/30 transform transition-all duration-500 hover:rotate-[15deg] hover:scale-110 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)]">
-    <div className="absolute inset-0 rounded-full animate-pulse bg-gradient-to-br from-blue-400/30 to-blue-700/10 blur-lg" />
-    <div className="relative flex items-center justify-center w-full h-full">
-      <FaEye className="text-blue-700 w-8 h-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] transition-transform duration-300 ease-in-out group-hover:scale-110" aria-hidden="true" />
+  <div className="relative w-20 h-20 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 shadow-[inset_0_0_6px_rgba(255,255,255,0.4),0_12px_24px_rgba(0,0,0,0.4)] transform-gpu transition-all duration-700 hover:rotate-[10deg] hover:scale-110 group/icon">
+    
+    {/* Glowing background ring */}
+    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/30 to-blue-800/10 blur-2xl animate-pulse z-0" />
+
+    {/* Subtle floating light effect */}
+    <div className="absolute top-1/2 left-1/2 w-28 h-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-400/10 blur-3xl z-0"></div>
+
+    {/* Icon */}
+    <div className="relative z-10 flex items-center justify-center w-full h-full">
+      <FaEye className="text-blue-600 w-9 h-9 drop-shadow-[0_2px_8px_rgba(59,130,246,0.8)] transition-all duration-500 ease-in-out group-hover/icon:scale-125" />
     </div>
   </div>
 ),
+
     
     
     description:
