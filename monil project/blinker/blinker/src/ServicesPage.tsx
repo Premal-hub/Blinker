@@ -166,51 +166,48 @@ details: (
 
 },
   
-
- {
-  title: "Low Vision Aids",
-  color: "from-purple-400 to-purple-600",
-  icon: <FaTint className="text-purple-600 w-8 h-8" aria-hidden="true" />,
-  description:
-    "We provide customized low vision solutions to help patients with permanent vision loss live more independently and comfortably.",
-  details: (
-    <>
-      <strong>Tailored solutions for conditions like macular degeneration, diabetic retinopathy, or retinal dystrophies:</strong>
-      <ul className="list-disc list-inside mt-2 text-gray-700">
-        <li><strong>Magnifying Devices:</strong> Enhance near and distance vision for reading and daily tasks.</li>
-        <li><strong>High-Powered Reading Aids:</strong> Specialized lenses and tools to boost reading clarity.</li>
-        <li><strong>Contrast-Enhancing Filters:</strong> Improve visual definition and safety in low-light environments.</li>
-        <li><strong>Assistive Tools for Daily Living:</strong> Practical tools and training to improve independence.</li>
-      </ul>
-      <p className="mt-2">
-        Our goal is to help you make the most of your remaining vision and enhance your quality of life with smart, effective support.
-      </p>
-    </>
-  ),
-},
-
 {
-  title: "Dry Eye Evaluation & Management",
-  color: "from-blue-400 to-blue-600",
-  icon: <FaTint className="text-blue-600 w-8 h-8" aria-hidden="true" />,
-  description:
-    "Chronic dry eyes can cause discomfort, blurred vision, and damage to your eyes. At Blinkers, we offer a comprehensive dry eye evaluation to identify the root causes and develop an effective management plan.",
-  details: (
-    <>
-      <strong>Our dry eye workup includes:</strong>
-      <ul className="list-disc list-inside mt-2 text-gray-700">
-        <li><strong>Tear Film Analysis:</strong> Evaluating the quality and quantity of your tears to detect dryness.</li>
-        <li><strong>Meibomian Gland Assessment:</strong> Checking the glands that secrete oil into your tears to prevent evaporation.</li>
-        <li><strong>Fluorescein Staining:</strong> A test to check for damage to the ocular surface caused by dryness.</li>
-        <li><strong>Environmental & Lifestyle Screening:</strong> Identifying external factors and habits contributing to dry eyes.</li>
-      </ul>
-      <p className="mt-2">
-        Based on these findings, we create a personalized treatment plan that includes lubricants, in-office therapies, lid hygiene, and preventive care tailored to your needs.
-      </p>
-    </>
-  ),
-}
-
+    title: "Low Vision Aids",
+    color: "from-purple-400 to-purple-600",
+    icon: <FaSearchPlus className="text-purple-600 w-8 h-8" aria-hidden="true" />,
+    description:
+      "We provide customized low vision solutions to help patients with permanent vision loss live more independently and comfortably.",
+    details: (
+      <>
+        <strong>Tailored solutions for conditions like macular degeneration, diabetic retinopathy, or retinal dystrophies:</strong>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li><strong>Magnifying Devices:</strong> Enhance near and distance vision for reading and daily tasks.</li>
+          <li><strong>High-Powered Reading Aids:</strong> Specialized lenses and tools to boost reading clarity.</li>
+          <li><strong>Contrast-Enhancing Filters:</strong> Improve visual definition and safety in low-light environments.</li>
+          <li><strong>Assistive Tools for Daily Living:</strong> Practical tools and training to improve independence.</li>
+        </ul>
+        <p className="mt-2">
+          Our goal is to help you make the most of your remaining vision and enhance your quality of life with smart, effective support.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Dry Eye Evaluation & Management",
+    color: "from-blue-400 to-blue-600",
+    icon: <FaEyeDropper className="text-blue-600 w-8 h-8" aria-hidden="true" />,
+    description:
+      "Chronic dry eyes can cause discomfort, blurred vision, and damage to your eyes. At Blinkers, we offer a comprehensive dry eye evaluation to identify the root causes and develop an effective management plan.",
+    details: (
+      <>
+        <strong>Our dry eye workup includes:</strong>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li><strong>Tear Film Analysis:</strong> Evaluating the quality and quantity of your tears to detect dryness.</li>
+          <li><strong>Meibomian Gland Assessment:</strong> Checking the glands that secrete oil into your tears to prevent evaporation.</li>
+          <li><strong>Fluorescein Staining:</strong> A test to check for damage to the ocular surface caused by dryness.</li>
+          <li><strong>Environmental & Lifestyle Screening:</strong> Identifying external factors and habits contributing to dry eyes.</li>
+        </ul>
+        <p className="mt-2">
+          Based on these findings, we create a personalized treatment plan that includes lubricants, in-office therapies, lid hygiene, and preventive care tailored to your needs.
+        </p>
+      </>
+    ),
+  },
 
 ];
 
