@@ -14,10 +14,11 @@ const services = [
     color: "from-blue-400 to-blue-600",
     // icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
    icon: (
-  <div className="relative w-14 h-14 flex items-center justify-center group">
-    {/* Animated gradient halo ring */}
-    <div className="absolute w-full h-full rounded-full animate-spin-slow bg-gradient-to-tr from-blue-400 via-blue-500 to-cyan-500 opacity-40 blur-[4px] group-hover:opacity-70"></div>
-    
+  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-white via-[#eaf3f0] to-[#d4e6e0] shadow-inner shadow-white/70 border border-[#c2d5ce] flex items-center justify-center">
+    <FaEye className="text-[#2f4f4f] w-7 h-7 drop-shadow-md" aria-hidden="true" />
+  </div>
+)
+
     {/* Glassy background circle */}
     <div className="relative z-10 w-14 h-14 rounded-full bg-white/30 backdrop-blur-md shadow-xl border border-white/40 group-hover:scale-105 transition-transform duration-300">
       <div className="w-full h-full flex items-center justify-center">
