@@ -58,9 +58,12 @@ const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="hover:underline font-medium focus:outline-none focus-visible:ring-2 ring-[#7a9f90]"
               >
-                Shila Tower, BH/22 Samarth Park Apartments,
+                Blinkers- Eye Clinic and Optical Showroom 
                 <br />
-                Near BAPS Hospital, Adajan, Surat, Gujarat 395009
+                BH/22 Samarth Park ‘Shakti Tower’ Apartment Adajan Rd,<br /> 
+                opp. You Telecom, Adajan,<br /> 
+                Surat, Gujarat 395009 
+               
               </a>
             </div>
           </div>
