@@ -51,7 +51,60 @@ icon: (
   {
     title: "Eye Number Testing",
     color: "from-green-400 to-green-600",
-    icon: <FaCheckCircle className="text-green-600 w-8 h-8" aria-hidden="true" />,
+    // icon: <FaCheckCircle className="text-green-600 w-8 h-8" aria-hidden="true" />,
+icon: (
+  <div className="relative w-14 h-14 rounded-full bg-white/50 backdrop-blur-md border border-gray-200 shadow-sm flex items-center justify-center">
+    <svg
+      className="w-8 h-8 text-green-600"
+      viewBox="0 0 512 512"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Circle background (optional) */}
+      <circle
+        cx="256"
+        cy="256"
+        r="200"
+        stroke="currentColor"
+        strokeWidth="40"
+        className="opacity-10"
+      />
+
+      {/* Tick Path with animation */}
+      <path
+        d="M138 262 L222 346 L370 198"
+        stroke="currentColor"
+        strokeWidth="40"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="motion-tick"
+      />
+    </svg>
+
+    {/* Tailwind animation with keyframes injected below */}
+    <style>
+      {`
+        .motion-tick {
+          stroke-dasharray: 300;
+          stroke-dashoffset: 300;
+          animation: drawTick 2s linear infinite;
+        }
+
+        @keyframes drawTick {
+          0% {
+            stroke-dashoffset: 300;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+        }
+      `}
+    </style>
+  </div>
+),
+
+    
     description:
       "Say goodbye to guesswork! Our precise digital instruments measure your exact lens power with incredible accuracy.",
     details: (
