@@ -52,25 +52,16 @@ icon: (
     title: "Eye Number Testing",
     color: "from-green-400 to-green-600",
     // icon: <FaCheckCircle className="text-green-600 w-8 h-8" aria-hidden="true" />,
-icon: (
-  <div className="relative w-14 h-14 rounded-full bg-white/50 backdrop-blur-md border border-gray-200 shadow-sm flex items-center justify-center">
+
+    icon: (
+  <div className="relative w-14 h-14 rounded-full bg-white/40 backdrop-blur-md border border-gray-200 shadow-md flex items-center justify-center">
     <svg
       className="w-8 h-8 text-green-600"
       viewBox="0 0 512 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Circle background (optional) */}
-      <circle
-        cx="256"
-        cy="256"
-        r="200"
-        stroke="currentColor"
-        strokeWidth="40"
-        className="opacity-10"
-      />
-
-      {/* Tick Path with animation */}
+      {/* Animated Tick Path */}
       <path
         d="M138 262 L222 346 L370 198"
         stroke="currentColor"
@@ -82,13 +73,13 @@ icon: (
       />
     </svg>
 
-    {/* Tailwind animation with keyframes injected below */}
+    {/* Smooth Tick Animation */}
     <style>
       {`
         .motion-tick {
           stroke-dasharray: 300;
           stroke-dashoffset: 300;
-          animation: drawTick 2s linear infinite;
+          animation: drawTick 2.5s ease-in-out infinite;
         }
 
         @keyframes drawTick {
