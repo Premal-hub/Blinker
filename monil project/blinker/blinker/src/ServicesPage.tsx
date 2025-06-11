@@ -53,15 +53,14 @@ icon: (
     color: "from-green-400 to-green-600",
     // icon: <FaCheckCircle className="text-green-600 w-8 h-8" aria-hidden="true" />,
 
-    icon: (
+icon: (
   <div className="relative w-14 h-14 rounded-full bg-white/40 backdrop-blur-md border border-gray-200 shadow-md flex items-center justify-center">
     <svg
-      className="w-8 h-8 text-green-600"
+      className="w-10 h-10 text-green-600"
       viewBox="0 0 512 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Animated Tick Path */}
       <path
         d="M138 262 L222 346 L370 198"
         stroke="currentColor"
@@ -73,13 +72,12 @@ icon: (
       />
     </svg>
 
-    {/* Smooth Tick Animation */}
     <style>
       {`
         .motion-tick {
           stroke-dasharray: 300;
           stroke-dashoffset: 300;
-          animation: drawTick 2.5s ease-in-out infinite;
+          animation: drawTick 1.6s ease-in-out infinite;
         }
 
         @keyframes drawTick {
@@ -94,6 +92,7 @@ icon: (
     </style>
   </div>
 ),
+
 
     
     description:
