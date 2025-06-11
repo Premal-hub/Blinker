@@ -12,14 +12,8 @@ const services = [
   {
     title: "Comprehensive Eye Exams",
     color: "from-blue-400 to-blue-600",
-    // icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
-    icon: (
-  <div className="relative z-10 w-14 h-14 rounded-full bg-white/30 backdrop-blur-md shadow-xl border border-white/40 group-hover:scale-105 transition-transform duration-300">
-    <div className="w-full h-full flex items-center justify-center">
-      <FaEye className="text-blue-700 w-8 h-8 drop-shadow-md" aria-hidden="true" />
-    </div>
-  </div>
-),
+  icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
+
 
 
    
