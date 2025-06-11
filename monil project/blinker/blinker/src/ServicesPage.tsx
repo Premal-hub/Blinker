@@ -17,7 +17,7 @@ const services = [
   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-white via-[#eaf3f0] to-[#d4e6e0] shadow-inner shadow-white/70 border border-[#c2d5ce] flex items-center justify-center">
     <FaEye className="text-[#2f4f4f] w-7 h-7 drop-shadow-md" aria-hidden="true" />
   </div>
-)
+),
 
     {/* Glassy background circle */}
     <div className="relative z-10 w-14 h-14 rounded-full bg-white/30 backdrop-blur-md shadow-xl border border-white/40 group-hover:scale-105 transition-transform duration-300">
