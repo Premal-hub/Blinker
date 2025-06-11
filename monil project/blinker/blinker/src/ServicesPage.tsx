@@ -51,7 +51,8 @@ const services = [
   {
     title: "Advanced Contact Lens Fitting",
     color: "from-red-400 to-red-600",
-    icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
+    // icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
+    icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
     description:
       "Comfort meets clarity — find your perfect contact lens fit, whether daily, monthly, or colored lenses!",
     details: (
@@ -70,29 +71,39 @@ const services = [
       </li>
         </ul>
         <p className="mt-2">
-          Enjoy freedom and clear vision with hassle-free contacts tailored just for you.
+         Each fit is customized with corneal topography and slit lamp evaluations to ensure optimal comfort and performance.
         </p>
       </>
     ),
   },
+      // icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
+
   {
-    title: "Designer Glasses & Sunglasses",
-    color: "from-yellow-400 to-yellow-600",
-    icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
-    description:
-      "Make a statement with eyewear that’s uniquely you. Trendy, classic, or bold — we’ve got the styles to fit your vibe.",
-    details: (
-      <>
-        <strong>Highlights:</strong>
-        <ul className="list-disc list-inside mt-2 text-gray-700">
-          <li>Wide range of prescription & non-prescription frames</li>
-          <li>Expert styling advice based on your face shape</li>
-          <li>UV protection & polarized lenses for outdoor comfort</li>
-        </ul>
-        <p className="mt-2">Look great and see clearly — your perfect pair awaits.</p>
-      </>
-    ),
-  },
+  title: "Vision Therapy for Amblyopia (Lazy Eye)",
+  color: "from-yellow-400 to-yellow-600",
+  icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
+  description:
+    "Personalized therapy to improve eye coordination, depth perception, and visual performance beyond glasses.",
+  details: (
+    <>
+      <strong>We offer evidence-based vision therapy programs for:</strong>
+      <ul className="list-disc list-inside mt-2 text-gray-700">
+        <li>Children and adults with amblyopia (lazy eye)</li>
+        <li>Strabismus (eye turn) and binocular vision dysfunctions</li>
+        <li>Challenges in depth perception and visual coordination</li>
+      </ul>
+      <p className="mt-2">
+        Our therapy includes a combination of digital and interactive exercises designed to:
+      </p>
+      <ul className="list-disc list-inside mt-2 text-gray-700">
+        <li>Strengthen eye teaming and coordination</li>
+        <li>Enhance depth perception and visual tracking</li>
+        <li>Support functional vision improvement beyond glasses</li>
+      </ul>
+    </>
+  ),
+}
+
   {
     title: "Dry Eye Treatment",
     color: "from-purple-400 to-purple-600",
