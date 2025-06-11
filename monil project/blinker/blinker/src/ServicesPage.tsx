@@ -119,7 +119,7 @@ export default function Services() {
       </h1>
 
       <p className="max-w-3xl mx-auto text-center text-gray-700 mb-12 text-lg italic">
-       At <h3 className="text-5xl font-extrabold text-[#7a9f90] drop-shadow-md">Blinkers</h3>, we go beyond basic eye tests — we provide comprehensive, personalized care for every eye at every stage of life. Our range of services includes:
+       At <h3 className="text-2xl font-extrabold text-[#7a9f90] drop-shadow-md">Blinkers</h3>, we go beyond basic eye tests — we provide comprehensive, personalized care for every eye at every stage of life. Our range of services includes:
 
       </p>
 
