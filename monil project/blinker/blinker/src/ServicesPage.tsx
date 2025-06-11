@@ -49,18 +49,21 @@ const services = [
     ),
   },
   {
-    title: "Contact Lens Fitting",
+    title: "Advanced Contact Lens Fitting",
     color: "from-red-400 to-red-600",
     icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
     description:
       "Comfort meets clarity — find your perfect contact lens fit, whether daily, monthly, or colored lenses!",
     details: (
       <>
-        <strong>Our fitting process ensures:</strong>
+        <strong>We specialize in fitting a wide range of specialty contact lenses, including:</strong>
         <ul className="list-disc list-inside mt-2 text-gray-700">
-          <li>Thorough eye health check before fitting</li>
-          <li>Trial lenses to guarantee perfect fit & comfort</li>
-          <li>Expert tips on lens care & safe wear</li>
+       
+          <li> <strong>Scleral Lenses:</strong> Ideal for complex corneal conditions like keratoconus, post-LASIK ectasia, ocular surface disease, and severe dry eye. These lenses vault over the cornea, providing both vision correction and therapeutic relief.</li>
+        <li> </li><strong>PROSE Lenses:</strong> Advanced prosthetic devices designed for patients with extreme ocular surface irregularities or scarring.</li>
+
+          <li> <strong>Custom Soft & RGP Lenses:</strong> For high refractive errors, irregular corneas, or specific lifestyle needs. </li>
+
         </ul>
         <p className="mt-2">
           Enjoy freedom and clear vision with hassle-free contacts tailored just for you.
