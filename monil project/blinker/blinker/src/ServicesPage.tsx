@@ -22,12 +22,30 @@ icon: (
     {/* Ambient glow */}
     <div className="absolute inset-0 rounded-full bg-white opacity-20 blur-md z-0" />
 
-    {/* Eye Icon stays large */}
+    {/* Flickering Eye Icon */}
     <div className="relative z-10 flex items-center justify-center w-full h-full">
-      <FaEye className="text-blue-600 w-8 h-8 drop-shadow-sm group-hover/icon:scale-110 transition-transform duration-300 ease-in-out" aria-hidden="true" />
+      <FaEye
+        className="text-blue-600 w-8 h-8 drop-shadow-sm animate-blink group-hover/icon:scale-110 transition-transform duration-300 ease-in-out"
+        aria-hidden="true"
+      />
     </div>
+
+    {/* Custom flicker/blink animation */}
+    <style>
+      {`
+        @keyframes blink {
+          0%, 100% { transform: scaleY(1); }
+          48%, 52% { transform: scaleY(0.1); }
+        }
+        .animate-blink {
+          animation: blink 3s ease-in-out infinite;
+          transform-origin: center;
+        }
+      `}
+    </style>
   </div>
 ),
+
 
 
 
