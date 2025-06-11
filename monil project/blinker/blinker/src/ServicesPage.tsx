@@ -1,7 +1,4 @@
 import React from "react";
-
-
-
 import {
   FaEye,
   FaRegEye,
@@ -18,8 +15,19 @@ const services = [
   {
     title: "Comprehensive Eye Exams",
     color: "from-blue-400 to-blue-600",
-   icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
+   // icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
+icon: (
+  <div className="relative w-14 h-14 rounded-full bg-white/50 backdrop-blur-md border border-gray-200 shadow-sm transition-transform duration-500 transform-gpu hover:rotate-3 hover:scale-105 group/icon">
+    
+    {/* Ambient glow */}
+    <div className="absolute inset-0 rounded-full bg-white opacity-20 blur-md z-0" />
 
+    {/* Eye Icon stays large */}
+    <div className="relative z-10 flex items-center justify-center w-full h-full">
+      <FaEye className="text-blue-600 w-8 h-8 drop-shadow-sm group-hover/icon:scale-110 transition-transform duration-300 ease-in-out" aria-hidden="true" />
+    </div>
+  </div>
+),
     
     
     description:
