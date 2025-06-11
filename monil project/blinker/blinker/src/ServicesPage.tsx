@@ -112,8 +112,8 @@ icon: (
   {
     title: "Advanced Contact Lens Fitting",
     color: "from-red-400 to-red-600",
-    // icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
-    icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
+     icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
+    // icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
     description:
       "Comfort meets clarity — find your perfect contact lens fit, whether daily, monthly, or colored lenses!",
     details: (
