@@ -17,35 +17,29 @@ const services = [
     color: "from-blue-400 to-blue-600",
   // icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
 icon: (
-  <div className="relative w-14 h-14 rounded-full bg-white/50 backdrop-blur-md border border-gray-200 shadow-sm transition-transform duration-500 transform-gpu hover:rotate-3 hover:scale-105 group/icon">
-    
-    {/* Ambient glow */}
-    <div className="absolute inset-0 rounded-full bg-white opacity-20 blur-md z-0" />
-
-    {/* Flickering Eye Icon */}
-    <div className="relative z-10 flex items-center justify-center w-full h-full">
-      <FaEye
-        className="text-blue-600 w-8 h-8 drop-shadow-sm animate-blink group-hover/icon:scale-110 transition-transform duration-300 ease-in-out"
-        aria-hidden="true"
-      />
+  <div className="relative w-14 h-14 rounded-full bg-white/50 backdrop-blur-md border border-gray-200 shadow-sm flex items-center justify-center">
+    <div className="eye-container relative">
+      {/* Always show these icons and toggle opacity */}
+      <FaEye className="eye-open absolute w-8 h-8 text-blue-600" aria-hidden="true" />
+      <FaRegEye className="eye-close absolute w-8 h-8 text-blue-600 opacity-0" aria-hidden="true" />
     </div>
 
-    {/* Custom flicker/blink animation */}
     <style>
       {`
         @keyframes blink {
-          0%, 100% { transform: scaleY(1); }
-          48%, 52% { transform: scaleY(0.1); }
+          0%, 94%, 100% { opacity: 1; }
+          95%, 99% { opacity: 0; }
         }
-        .animate-blink {
-          animation: blink 3s ease-in-out infinite;
-          transform-origin: center;
+        .eye-open {
+          animation: blink 4s ease-in-out infinite;
+        }
+        .eye-close {
+          animation: blink 4s ease-in-out infinite 0.1s;
         }
       `}
     </style>
   </div>
 ),
-
 
 
 
