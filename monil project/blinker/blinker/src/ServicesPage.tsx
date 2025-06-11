@@ -85,14 +85,16 @@ const services = [
   description:
     "Personalized therapy to improve eye coordination, depth perception, and visual performance beyond glasses.",
   details: (
-    <>
-      <strong>We offer evidence-based vision therapy programs for:</strong>
+    <div>
+      <p>
+        <strong>We offer evidence-based vision therapy programs for:</strong>
+      </p>
       <ul className="list-disc list-inside mt-2 text-gray-700">
         <li>Children and adults with amblyopia (lazy eye)</li>
         <li>Strabismus (eye turn) and binocular vision dysfunctions</li>
         <li>Challenges in depth perception and visual coordination</li>
       </ul>
-      <p className="mt-2">
+      <p className="mt-4">
         Our therapy includes a combination of digital and interactive exercises designed to:
       </p>
       <ul className="list-disc list-inside mt-2 text-gray-700">
@@ -100,9 +102,10 @@ const services = [
         <li>Enhance depth perception and visual tracking</li>
         <li>Support functional vision improvement beyond glasses</li>
       </ul>
-    </>
+    </div>
   ),
-}
+},
+  
 
   {
     title: "Dry Eye Treatment",
