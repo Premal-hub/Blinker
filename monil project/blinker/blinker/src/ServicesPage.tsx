@@ -14,7 +14,7 @@ const services = [
     color: "from-blue-400 to-blue-600",
     icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
     description:
-      "Discover the power of crystal-clear vision! Our thorough eye exams use state-of-the-art technology to detect issues early and keep your eyes healthy.",
+      "Our detailed eye exams are more than just checking a prescription. We evaluate the overall health of your eyes using advanced equipment, assessing for refractive errors, binocular vision issues, eye pressure (for glaucoma risk), and signs of retinal or corneal diseases. Early detection is the key to long-term vision health.",
     details: (
       <>
         <strong>What you get:</strong>
@@ -118,10 +118,10 @@ export default function Services() {
         Our Eye Care Services
       </h1>
 
-      <p className="max-w-3xl mx-auto text-center text-gray-700 mb-12 text-lg italic">
-       At <h3 className="text-2xl font-extrabold text-[#7a9f90] drop-shadow-md">Blinkers</h3>, we go beyond basic eye tests — we provide comprehensive, personalized care for every eye at every stage of life. Our range of services includes:
+    <p className="max-w-3xl mx-auto text-center text-gray-700 mb-12 text-lg italic">
+  At <span className="text-2xl font-extrabold text-[#7a9f90] drop-shadow-md">Blinkers</span>, we go beyond basic eye tests — we provide comprehensive, personalized care for every eye at every stage of life. Our range of services includes:
+</p>
 
-      </p>
 
       <section
         className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto"
