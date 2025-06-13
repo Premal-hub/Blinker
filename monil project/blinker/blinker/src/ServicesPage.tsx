@@ -1,4 +1,4 @@
-this is my service page can you make an more adjestment in this billo this :-import React from "react";
+import React from "react";
 import {
   FaEye,
   FaRegEye,
