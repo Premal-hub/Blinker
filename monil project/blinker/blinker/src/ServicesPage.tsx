@@ -1,4 +1,4 @@
-import React from "react";
+this is my service page can you make an more adjestment in this billo this :-import React from "react";
 import {
   FaEye,
   FaRegEye,
@@ -72,7 +72,7 @@ icon: (
     </svg>
 
     <style>
-      {
+      {`
         .motion-tick {
           stroke-dasharray: 300;
           stroke-dashoffset: 300;
@@ -87,7 +87,7 @@ icon: (
             stroke-dashoffset: 0;
           }
         }
-      }
+      `}
     </style>
   </div>
 ),
@@ -262,14 +262,14 @@ export default function Services() {
         {services.map(({ title, color, icon, description, details }, idx) => (
           <article
             key={idx}
-            className={bg-white bg-opacity-70 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col gap-5 border-l-8 border-gradient-to-b ${color} hover:shadow-2xl hover:scale-[1.05] transition-transform duration-300 cursor-pointer}
+            className={`bg-white bg-opacity-70 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col gap-5 border-l-8 border-gradient-to-b ${color} hover:shadow-2xl hover:scale-[1.05] transition-transform duration-300 cursor-pointer`}
             role="region"
-            aria-labelledby={service-${idx}}
+            aria-labelledby={`service-${idx}`}
           >
             <header className="flex items-center gap-4">
               <div className="flex-shrink-0">{icon}</div>
               <h2
-                id={service-${idx}}
+                id={`service-${idx}`}
                 className="text-3xl font-semibold text-gray-800"
               >
                 {title}
