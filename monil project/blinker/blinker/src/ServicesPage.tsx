@@ -262,9 +262,11 @@ export default function Services() {
         {services.map(({ title, color, icon, description, details }, idx) => (
           <article
             key={idx}
-            className={`bg-white bg-opacity-70 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col gap-5 border-l-8 border-gradient-to-b ${color} hover:shadow-2xl hover:scale-[1.05] transition-transform duration-300 cursor-pointer`}
+            className={`bg-white bg-opacity-70 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col gap-5 border-l-8 bg-gradient-to-b ${color} hover:shadow-2xl hover:scale-[1.05] transition-transform duration-300 cursor-pointer`}
             role="region"
             aria-labelledby={`service-${idx}`}
+           
+
           >
             <header className="flex items-center gap-4">
               <div className="flex-shrink-0">{icon}</div>
