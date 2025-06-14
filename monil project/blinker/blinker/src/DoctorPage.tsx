@@ -138,8 +138,7 @@ const Doctor: React.FC = () => {
         <div className="mt-12 flex justify-center relative z-20">
           <motion.button
             onClick={openModal}
-            className="px-8 py-4 bg-gradient-to-r from-[#7a9f90] to-[#a2b9ae] text-white font-semibold rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_20px_#7a9f90] transition-transform duration-500 focus:outline-none focus:ring-4 focus:ring-[#7a9f90]/50"
-            whileTap={{ scale: 0.95 }}
+            className="px-8 py-4 bg-gradient-to-r from-[#7a9f90] to-[#a2b9ae] text-white font-semibold rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_20px_#7a9f90] transition-transform duration-300"            whileTap={{ scale: 0.95 }}
             aria-haspopup="dialog"
           >
             Book Consultation
