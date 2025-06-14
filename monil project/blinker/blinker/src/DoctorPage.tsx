@@ -217,7 +217,9 @@ const Doctor: React.FC = () => {
         `}</style>
       </section>
     </main>
-    {/* Modal outside main layout to prevent scroll jump */}
+
+    
+      {/* Modal outside main layout to prevent scroll jump */}
       <AnimatePresence>
         {modalOpen && (
           <motion.div
@@ -270,6 +272,8 @@ const Doctor: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
+    
+   
   );
 };
 
