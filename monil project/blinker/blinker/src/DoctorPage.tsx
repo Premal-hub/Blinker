@@ -1,24 +1,16 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import doctorPhoto from "./PHOTO-2025-05-16-02-25-37.jpg";
 
 const Doctor: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = useCallback(() => setModalOpen(true), []);
-  const closeModal = useCallback(() => setModalOpen(false), []);
+  const openModal = useCallback(() => {
+    setModalOpen(true);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // scroll to top when modal opens
+  }, []);
 
-  // Prevent background scroll when modal is open
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [modalOpen]);
+  const closeModal = useCallback(() => setModalOpen(false), []);
 
   return (
     <main
@@ -31,7 +23,7 @@ const Doctor: React.FC = () => {
         <div className="absolute -bottom-20 -right-20 w-28 h-28 bg-[#a2b9ae] rounded-full opacity-30 animate-pulse blur-2xl"></div>
         <div className="absolute top-1/2 left-0 w-24 h-24 bg-[#8ba89e] rounded-full opacity-15 animate-float blur-xl"></div>
 
-        {/* Doctor Info Section */}
+        {/* Doctor Info */}
         <div className="flex flex-col md:flex-row items-center gap-10 relative z-10">
           <motion.div
             className="relative"
@@ -65,10 +57,7 @@ const Doctor: React.FC = () => {
               B.Optom (Gold Medalist), Pune.<br />
               Fellow of Sankara Netralaya, Chennai.
             </p>
-            <p
-              className="italic text-[#4b5d44] mt-4 text-lg"
-              aria-label="Doctor's vision quote"
-            >
+            <p className="italic text-[#4b5d44] mt-4 text-lg">
               “Vision is more than just eyesight — it's a way of life.”
             </p>
           </motion.div>
@@ -92,7 +81,7 @@ const Doctor: React.FC = () => {
             <span className="font-semibold text-[#527a65]"> Bharati Vidyapeeth, Pune (2017–2021)</span>. He then pursued advanced clinical training at
             <span className="font-semibold text-[#527a65]"> Sankara Nethralaya, Chennai</span>, completing a prestigious
             <span className="font-semibold text-[#527a65]"> Postgraduate Fellowship in Specialty Contact Lenses</span> in 2022. His pursuit of excellence further led him to the
-            <span className="font-semibold text-[#527a65]"> L.V. Prasad Eye Institute, Hyderabad</span>, where he received intensive training in scleral lenses and PROSE lenses, gaining hands-on experience in[...]
+            <span className="font-semibold text-[#527a65]"> L.V. Prasad Eye Institute, Hyderabad</span>, where he received intensive training in scleral lenses and PROSE lenses.
           </p>
           <br />
           <p>
@@ -129,19 +118,13 @@ const Doctor: React.FC = () => {
           transition={{ delay: 0.8, duration: 0.7 }}
         >
           <h3 className="text-3xl font-bold text-[#7a9f90] mb-5 flex items-center gap-3">
-            <span role="img" aria-label="trophy">
-              🏆
-            </span>{" "}
-            Achievements
+            <span role="img" aria-label="trophy">🏆</span> Achievements
           </h3>
           <ul className="list-disc pl-8 space-y-3 text-[#4b5d44] text-lg font-medium">
             <li>Gold Medalist in Optometry from Bharati Vidyapeeth University, Pune</li>
             <li>Fellow of Sankara Netralaya, Chennai</li>
             <li>Speaker & researcher at global eye care symposiums</li>
-            <li>
-              Recognized by the Indian Medical Association for leading rural
-              vision health camps
-            </li>
+            <li>Recognized by the Indian Medical Association for leading rural vision health camps</li>
           </ul>
         </motion.div>
 
@@ -149,7 +132,7 @@ const Doctor: React.FC = () => {
         <div className="mt-12 flex justify-center relative z-20">
           <motion.button
             onClick={openModal}
-            className="px-8 py-4 bg-gradient-to-r from-[#7a9f90] to-[#a2b9ae] text-white font-semibold rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_20px_#7a9f90] transition-transform duration-300"
+            className="px-8 py-4 bg-gradient-to-r from-[#7a9f90] to-[#a2b9ae] text-white font-semibold rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_20px_#7a9f90] transition-transform duration-500 focus:outline-none focus:ring-4 focus:ring-[#7a9f90]/50"
             whileTap={{ scale: 0.95 }}
             aria-haspopup="dialog"
           >
@@ -171,35 +154,24 @@ const Doctor: React.FC = () => {
               aria-labelledby="modal-title"
             >
               <motion.div
-                className="bg-white rounded-xl p-8 max-w-md w-full relative overflow-auto max-h-screen"
+                className="bg-white rounded-xl p-8 max-w-md w-full relative"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
-                onClick={e => e.stopPropagation()}
+                onClick={(e) => e.stopPropagation()}
               >
-                <h2
-                  id="modal-title"
-                  className="text-2xl font-bold text-[#7a9f90] mb-4"
-                >
+                <h2 id="modal-title" className="text-2xl font-bold text-[#7a9f90] mb-4">
                   Book Consultation
                 </h2>
                 <p className="mb-6 text-[#364b3c]">
-                  To book a consultation with Monil Champaneria, please call
-                  us at{" "}
-                  <a
-                    href="tel:+919860849086"
-                    className="text-[#527a65] underline hover:text-[#405941]"
-                  >
+                  To book a consultation with Monil Champaneria, please call us at{" "}
+                  <a href="tel:+919860849086" className="text-[#527a65] underline hover:text-[#405941]">
                     +91 98608 49086
                   </a>{" "}
                   or email{" "}
-                  <a
-                    href="mailto:blinkers.in@gmail.com"
-                    className="text-[#527a65] underline hover:text-[#405941]"
-                  >
+                  <a href="mailto:blinkers.in@gmail.com" className="text-[#527a65] underline hover:text-[#405941]">
                     blinkers.in@gmail.com
-                  </a>
-                  .
+                  </a>.
                 </p>
                 <button
                   onClick={closeModal}
