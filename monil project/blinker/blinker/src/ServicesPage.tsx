@@ -9,6 +9,9 @@ import {
   FaEyeDropper,
   FaBrain,
 } from "react-icons/fa";
+// Add this if you're using Framer Motion:
+import { motion } from "framer-motion";
+
 
 // Service data structure for eye clinic
 const services = [
