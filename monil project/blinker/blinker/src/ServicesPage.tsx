@@ -9,9 +9,7 @@ import {
   FaEyeDropper,
   FaBrain,
 } from "react-icons/fa";
-
-// ✅ Add this import at the top
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // ✅ Import motion for animations
 
 // Service data structure for eye clinic
 const services = [
@@ -19,8 +17,8 @@ const services = [
     title: "Comprehensive Eye Exams",
     color: "from-blue-400 to-blue-600",
     icon: (
-      <div className="relative w-14 h-14 rounded-full bg-white/50 backdrop-blur-md border border-gray-200 shadow-sm transition-transform duration-500 transform-gpu hover:rotate-3 hover:scale-105 group/icon">
-        <div className="absolute inset-0 rounded-full bg-white opacity-20 blur-md z-0" />
+      <div className="relative w-14 h-14 rounded-full backdrop-blur-md border border-gray-200 shadow-sm transition-transform duration-500 transform-gpu hover:rotate-3 hover:scale-105 group/icon">
+        <div className="absolute inset-0 rounded-full opacity-20 blur-md z-0" />
         <div className="relative z-10 flex items-center justify-center w-full h-full">
           <FaEye className="text-blue-600 w-8 h-8 drop-shadow-sm group-hover/icon:scale-110 transition-transform duration-300 ease-in-out" aria-hidden="true" />
         </div>
@@ -47,7 +45,7 @@ const services = [
     title: "Eye Number Testing",
     color: "from-green-400 to-green-600",
     icon: (
-      <div className="relative w-14 h-14 rounded-full bg-green-500 shadow-md flex items-center justify-center">
+      <div className="relative w-14 h-14 rounded-full shadow-md flex items-center justify-center">
         <svg
           className="w-10 h-10 text-white"
           viewBox="0 0 512 512"
@@ -73,12 +71,8 @@ const services = [
             }
 
             @keyframes drawTick {
-              0% {
-                stroke-dashoffset: 300;
-              }
-              100% {
-                stroke-dashoffset: 0;
-              }
+              0% { stroke-dashoffset: 300; }
+              100% { stroke-dashoffset: 0; }
             }
           `}
         </style>
@@ -103,13 +97,13 @@ const services = [
     color: "from-red-400 to-red-600",
     icon: (
       <motion.div
-        className="relative w-14 h-14 bg-white/70 backdrop-blur-lg rounded-full shadow-xl overflow-hidden flex items-center justify-center"
+        className="relative w-14 h-14 backdrop-blur-lg rounded-full shadow-xl overflow-hidden flex items-center justify-center"
         whileHover={{ rotateY: 10, rotateX: -5, scale: 1.05 }}
         animate={{ y: [0, -2, 0] }}
         transition={{ type: "spring", damping: 10, stiffness: 80, repeat: Infinity, duration: 2 }}
         style={{ perspective: 1000 }}
       >
-        <div className="absolute inset-0 rounded-full bg-yellow-300 opacity-20 blur-md z-0" />
+        <div className="absolute inset-0 rounded-full opacity-20 blur-md z-0" />
         <FaGlasses className="text-yellow-800 w-8 h-8 z-10 drop-shadow" />
         <motion.div
           className="absolute top-0 left-[-50%] w-[200%] h-full bg-gradient-to-r from-transparent via-white/30 to-transparent rotate-12"
@@ -129,7 +123,7 @@ const services = [
           <li><strong>Custom Soft & RGP Lenses:</strong> For high refractive errors, irregular corneas, or specific lifestyle needs.</li>
         </ul>
         <p className="mt-2">
-          Each fit is customized with corneal topography and slit lamp evaluations to ensure optimal comfort and performance.
+         Each fit is customized with corneal topography and slit lamp evaluations to ensure optimal comfort and performance.
         </p>
       </>
     ),
@@ -182,7 +176,7 @@ const services = [
     color: "from-blue-400 to-blue-600",
     icon: <FaEyeDropper className="text-blue-600 w-8 h-8" aria-hidden="true" />,
     description:
-      "Chronic dry eyes can cause discomfort, blurred vision, and damage to your eyes. At Blinkers, we offer a comprehensive dry eye evaluation to identify the root causes and develop an effective management plan.",
+      "Chronic dry eyes can cause discomfort, blurred vision, and damage to your eyes.",
     details: (
       <>
         <strong>Our dry eye workup includes:</strong>
@@ -202,7 +196,7 @@ const services = [
 
 export default function Services() {
   return (
-    <main className="p-10 bg-gray-50 min-h-screen">
+    <main className="p-10 min-h-screen">
       <h1 className="text-5xl font-extrabold text-center mb-6 text-[#7a9f90]" aria-label="Our Eye Care Services">
         Our Eye Care Services
       </h1>
@@ -213,7 +207,7 @@ export default function Services() {
         {services.map(({ title, color, icon, description, details }, idx) => (
           <article
             key={idx}
-            className={`bg-white bg-opacity-70 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col gap-5 border-l-8 bg-gradient-to-b ${color} hover:shadow-2xl hover:scale-[1.05] transition-transform duration-300 cursor-pointer`}
+            className={`rounded-xl shadow-lg p-8 flex flex-col gap-5 border-l-8 bg-gradient-to-b ${color} hover:shadow-2xl hover:scale-[1.05] transition-transform duration-300 cursor-pointer`}
             role="region"
             aria-labelledby={`service-${idx}`}
           >
