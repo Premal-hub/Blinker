@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import doctorPhoto from "./PHOTO-2025-05-16-02-25-37.jpg";
 
@@ -7,6 +7,18 @@ const Doctor: React.FC = () => {
 
   const openModal = useCallback(() => setModalOpen(true), []);
   const closeModal = useCallback(() => setModalOpen(false), []);
+
+  // Prevent background scroll when modal is open
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [modalOpen]);
 
   return (
     <main
@@ -31,7 +43,7 @@ const Doctor: React.FC = () => {
             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-[#8cb59b] via-[#7a9f90] to-[#6e8e81] opacity-60 blur-3xl"></div>
             <img
               src={doctorPhoto}
-              alt=" Monil Champaneria"
+              alt="Monil Champaneria"
               loading="lazy"
               className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg relative z-10"
             />
@@ -50,8 +62,8 @@ const Doctor: React.FC = () => {
               Optom. Monil Champaneria
             </h2>
             <p className="text-xl text-[#405941] font-semibold mt-2">
-             B.Optom (Gold Medalist), Pune.<br></br>
-             Fellow of Sankara Netralaya, Chennai.
+              B.Optom (Gold Medalist), Pune.<br />
+              Fellow of Sankara Netralaya, Chennai.
             </p>
             <p
               className="italic text-[#4b5d44] mt-4 text-lg"
@@ -63,52 +75,51 @@ const Doctor: React.FC = () => {
         </div>
 
         {/* Description */}
-<motion.div
-  className="mt-12 text-[#364b3c] text-lg leading-relaxed max-w-3xl mx-auto text-justify"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 0.6, duration: 0.8 }}
->
-  <p>
-    <span className="font-semibold text-[#405941]">Blinkers Eye Clinic and Optical Showroom</span><br /><br />
-    Founded in 2023, Blinkers is the brainchild of 
-    <span className="font-semibold text-[#527a65]"> Monil Champaneria</span>, a passionate and highly skilled optometrist dedicated to delivering exceptional, personalized eye care in Surat, India.
-  </p>
-  <br />
-  <p>
-    Monil completed his Bachelor’s degree in Optometry from the esteemed 
-    <span className="font-semibold text-[#527a65]"> Bharati Vidyapeeth, Pune (2017–2021)</span>. He then pursued advanced clinical training at 
-    <span className="font-semibold text-[#527a65]"> Sankara Nethralaya, Chennai</span>, completing a prestigious 
-    <span className="font-semibold text-[#527a65]"> Postgraduate Fellowship in Specialty Contact Lenses</span> in 2022. His pursuit of excellence further led him to the 
-    <span className="font-semibold text-[#527a65]"> L.V. Prasad Eye Institute, Hyderabad</span>, where he received intensive training in scleral lenses and PROSE lenses, gaining hands-on experience in managing some of the most complex corneal and ocular surface diseases.
-  </p>
-  <br />
-  <p>
-    With a deep-rooted expertise in fitting 
-    <span className="font-semibold text-[#405941]"> specialty contact lenses</span> for conditions like 
-    <span className="font-semibold text-[#405941]"> keratoconus</span>, 
-    <span className="font-semibold text-[#405941]"> corneal trauma</span>, 
-    <span className="font-semibold text-[#405941]"> severe dryness</span>, and 
-    <span className="font-semibold text-[#405941]"> post-surgical corneas</span>, Monil brings a rare combination of clinical precision and compassionate care.
-  </p>
-  <br />
-  <p>
-    His professional interests also include 
-    <span className="font-semibold text-[#405941]"> orthokeratology (Ortho-K)</span> — a non-surgical, overnight vision correction technique — and 
-    <span className="font-semibold text-[#405941]"> myopia control</span>, especially for children and young adults.
-  </p>
-  <br />
-  <p>
-    At Blinkers, the goal is simple: to provide 
-    <span className="font-semibold text-[#527a65]"> world-class optometric services</span> locally — from 
-    <span className="font-semibold text-[#405941]"> routine eye exams</span> to 
-    <span className="font-semibold text-[#405941]"> advanced lens solutions</span> — all under one roof, backed by 
-    <span className="font-semibold text-[#527a65]"> knowledge</span>, 
-    <span className="font-semibold text-[#527a65]"> integrity</span>, and 
-    <span className="font-semibold text-[#527a65]"> care</span>.
-  </p>
-</motion.div>
-
+        <motion.div
+          className="mt-12 text-[#364b3c] text-lg leading-relaxed max-w-3xl mx-auto text-justify"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          <p>
+            <span className="font-semibold text-[#405941]">Blinkers Eye Clinic and Optical Showroom</span><br /><br />
+            Founded in 2023, Blinkers is the brainchild of
+            <span className="font-semibold text-[#527a65]"> Monil Champaneria</span>, a passionate and highly skilled optometrist dedicated to delivering exceptional, personalized eye care in Surat, India.
+          </p>
+          <br />
+          <p>
+            Monil completed his Bachelor’s degree in Optometry from the esteemed
+            <span className="font-semibold text-[#527a65]"> Bharati Vidyapeeth, Pune (2017–2021)</span>. He then pursued advanced clinical training at
+            <span className="font-semibold text-[#527a65]"> Sankara Nethralaya, Chennai</span>, completing a prestigious
+            <span className="font-semibold text-[#527a65]"> Postgraduate Fellowship in Specialty Contact Lenses</span> in 2022. His pursuit of excellence further led him to the
+            <span className="font-semibold text-[#527a65]"> L.V. Prasad Eye Institute, Hyderabad</span>, where he received intensive training in scleral lenses and PROSE lenses, gaining hands-on experience in[...]
+          </p>
+          <br />
+          <p>
+            With a deep-rooted expertise in fitting
+            <span className="font-semibold text-[#405941]"> specialty contact lenses</span> for conditions like
+            <span className="font-semibold text-[#405941]"> keratoconus</span>,
+            <span className="font-semibold text-[#405941]"> corneal trauma</span>,
+            <span className="font-semibold text-[#405941]"> severe dryness</span>, and
+            <span className="font-semibold text-[#405941]"> post-surgical corneas</span>, Monil brings a rare combination of clinical precision and compassionate care.
+          </p>
+          <br />
+          <p>
+            His professional interests also include
+            <span className="font-semibold text-[#405941]"> orthokeratology (Ortho-K)</span> — a non-surgical, overnight vision correction technique — and
+            <span className="font-semibold text-[#405941]"> myopia control</span>, especially for children and young adults.
+          </p>
+          <br />
+          <p>
+            At Blinkers, the goal is simple: to provide
+            <span className="font-semibold text-[#527a65]"> world-class optometric services</span> locally — from
+            <span className="font-semibold text-[#405941]"> routine eye exams</span> to
+            <span className="font-semibold text-[#405941]"> advanced lens solutions</span> — all under one roof, backed by
+            <span className="font-semibold text-[#527a65]"> knowledge</span>,
+            <span className="font-semibold text-[#527a65]"> integrity</span>, and
+            <span className="font-semibold text-[#527a65]"> care</span>.
+          </p>
+        </motion.div>
 
         {/* Achievements */}
         <motion.div
@@ -138,7 +149,7 @@ const Doctor: React.FC = () => {
         <div className="mt-12 flex justify-center relative z-20">
           <motion.button
             onClick={openModal}
-            className="px-8 py-4 bg-gradient-to-r from-[#7a9f90] to-[#a2b9ae] text-white font-semibold rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_20px_#7a9f90] transition-transform duration-500 focus:outline-none focus:ring-4 focus:ring-[#7a9f90]/50"
+            className="px-8 py-4 bg-gradient-to-r from-[#7a9f90] to-[#a2b9ae] text-white font-semibold rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_20px_#7a9f90] transition-transform duration-300"
             whileTap={{ scale: 0.95 }}
             aria-haspopup="dialog"
           >
@@ -160,11 +171,11 @@ const Doctor: React.FC = () => {
               aria-labelledby="modal-title"
             >
               <motion.div
-                className="bg-white rounded-xl p-8 max-w-md w-full relative"
+                className="bg-white rounded-xl p-8 max-w-md w-full relative overflow-auto max-h-screen"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
-                onClick={(e) => e.stopPropagation()}
+                onClick={e => e.stopPropagation()}
               >
                 <h2
                   id="modal-title"
@@ -173,10 +184,10 @@ const Doctor: React.FC = () => {
                   Book Consultation
                 </h2>
                 <p className="mb-6 text-[#364b3c]">
-                  To book a consultation with  Monil Champaneria, please call
+                  To book a consultation with Monil Champaneria, please call
                   us at{" "}
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+919860849086"
                     className="text-[#527a65] underline hover:text-[#405941]"
                   >
                     +91 98608 49086
