@@ -113,8 +113,25 @@ icon: (
     title: "Advanced Contact Lens Fitting",
     color: "from-red-400 to-red-600",
      // icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
-     icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
- 
+//     icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
+       icon: (
+      <motion.div
+        className="relative w-14 h-14 bg-white/70 backdrop-blur-lg rounded-full shadow-xl overflow-hidden flex items-center justify-center"
+        whileHover={{ rotateY: 10, rotateX: -5, scale: 1.05 }}
+        animate={{ y: [0, -2, 0] }}
+        transition={{ type: "spring", damping: 10, stiffness: 80, repeat: Infinity, duration: 2 }}
+        style={{ perspective: 1000 }}
+      >
+        <div className="absolute inset-0 rounded-full bg-yellow-300 opacity-20 blur-md z-0" />
+        <FaGlasses className="text-yellow-800 w-8 h-8 z-10 drop-shadow" />
+        <motion.div
+          className="absolute top-0 left-[-50%] w-[200%] h-full bg-gradient-to-r from-transparent via-white/30 to-transparent rotate-12"
+          animate={{ x: ["-100%", "100%"] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+        />
+      </motion.div>
+    ),
+    
     description:
       "Comfort meets clarity — find your perfect contact lens fit, whether daily, monthly, or colored lenses!",
     details: (
