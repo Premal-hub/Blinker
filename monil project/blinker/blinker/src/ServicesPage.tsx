@@ -114,7 +114,8 @@ icon: (
     color: "from-red-400 to-red-600",
      // icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
     // icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
-    <motion.div
+   icon: (
+  <motion.div
     className="relative w-14 h-14 bg-white/70 backdrop-blur-lg rounded-full shadow-xl overflow-hidden flex items-center justify-center"
     whileHover={{ rotateY: 10, rotateX: -5, scale: 1.05 }}
     animate={{ y: [0, -2, 0] }}
@@ -129,6 +130,7 @@ icon: (
       transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
     />
   </motion.div>
+),
     description:
       "Comfort meets clarity — find your perfect contact lens fit, whether daily, monthly, or colored lenses!",
     details: (
