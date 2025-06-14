@@ -1,4 +1,3 @@
-// Services.tsx
 import React from "react";
 import {
   FaEye,
@@ -11,40 +10,97 @@ import {
   FaBrain,
 } from "react-icons/fa";
 
+// Service data structure for eye clinic
 const services = [
   {
     title: "Comprehensive Eye Exams",
-    icon: <FaEye className="text-3xl text-blue-600" />,
-    description: (
+    color: "from-blue-400 to-blue-600",
+   // icon: <FaEye className="text-blue-600 w-8 h-8" aria-hidden="true" />,
+icon: (
+  <div className="relative w-14 h-14 rounded-full bg-white/50 backdrop-blur-md border border-gray-200 shadow-sm transition-transform duration-500 transform-gpu hover:rotate-3 hover:scale-105 group/icon">
+    
+    {/* Ambient glow */}
+    <div className="absolute inset-0 rounded-full bg-white opacity-20 blur-md z-0" />
+
+    {/* Eye Icon stays large */}
+    <div className="relative z-10 flex items-center justify-center w-full h-full">
+      <FaEye className="text-blue-600 w-8 h-8 drop-shadow-sm group-hover/icon:scale-110 transition-transform duration-300 ease-in-out" aria-hidden="true" />
+    </div>
+  </div>
+),
+    
+    
+    description:
+      "Our detailed eye exams are more than just checking a prescription. We evaluate the overall health of your eyes using advanced equipment, assessing for refractive errors, binocular vision issues, eye pressure (for glaucoma risk), and signs of retinal or corneal diseases. Early detection is the key to long-term vision health.",
+    details: (
       <>
-        <p className="mb-2">
-          Our detailed eye exams are more than just checking a prescription. We
-          evaluate the overall health of your eyes using advanced equipment,
-          assessing for refractive errors, binocular vision issues, eye pressure
-          (for glaucoma risk), and signs of retinal or corneal diseases. Early
-          detection is the key to long-term vision health.
-        </p>
-        <p className="font-semibold mb-1">What you get:</p>
-        <ul className="list-disc list-inside space-y-1">
+        <strong>What you get:</strong>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
           <li>Precise vision testing & prescription updates</li>
           <li>Screenings for glaucoma, cataracts & more</li>
           <li>Assessment of eye coordination & depth perception</li>
           <li>Personalized advice for maintaining eye health</li>
         </ul>
+        <p className="mt-2">
+          Your eyes deserve the best care — and that’s exactly what we deliver.
+        </p>
       </>
     ),
   },
   {
     title: "Eye Number Testing",
-    icon: <FaSearchPlus className="text-3xl text-green-600" />,
-    description: (
+    color: "from-green-400 to-green-600",
+    // icon: <FaCheckCircle className="text-green-600 w-8 h-8" aria-hidden="true" />,
+
+icon: (
+  <div className="relative w-14 h-14 rounded-full bg-green-500 shadow-md flex items-center justify-center">
+    <svg
+      className="w-10 h-10 text-white"
+      viewBox="0 0 512 512"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M138 262 L222 346 L370 198"
+        stroke="currentColor"
+        strokeWidth="40"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="motion-tick"
+      />
+    </svg>
+
+    <style>
+      {`
+        .motion-tick {
+          stroke-dasharray: 300;
+          stroke-dashoffset: 300;
+          animation: drawTick 1s ease-in-out infinite;
+        }
+
+        @keyframes drawTick {
+          0% {
+            stroke-dashoffset: 300;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+        }
+      `}
+    </style>
+  </div>
+),
+
+
+
+    
+    description:
+      "Say goodbye to guesswork! Our precise digital instruments measure your exact lens power with incredible accuracy.",
+    details: (
       <>
-        <p className="mb-2">
-          Say goodbye to guesswork! Our precise digital instruments measure your
-          exact lens power with incredible accuracy.
-        </p>
-        <p className="font-semibold mb-1">Experience includes:</p>
-        <ul className="list-disc list-inside space-y-1">
+        <strong>Experience includes:</strong>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
           <li>Instant, real-time vision simulations</li>
           <li>Custom lens recommendations tailored to your needs</li>
           <li>Comfortable & quick testing process</li>
@@ -55,133 +111,176 @@ const services = [
   },
   {
     title: "Advanced Contact Lens Fitting",
-    icon: <FaGlasses className="text-3xl text-orange-500" />,
-    description: (
+    color: "from-red-400 to-red-600",
+     // icon: <FaRegEye className="text-red-600 w-8 h-8" aria-hidden="true" />,
+    // icon: <FaGlasses className="text-yellow-600 w-8 h-8" aria-hidden="true" />,
+    <motion.div
+    className="relative w-14 h-14 bg-white/70 backdrop-blur-lg rounded-full shadow-xl overflow-hidden flex items-center justify-center"
+    whileHover={{ rotateY: 10, rotateX: -5, scale: 1.05 }}
+    animate={{ y: [0, -2, 0] }}
+    transition={{ type: "spring", damping: 10, stiffness: 80, repeat: Infinity, duration: 2 }}
+    style={{ perspective: 1000 }}
+  >
+    <div className="absolute inset-0 rounded-full bg-yellow-300 opacity-20 blur-md z-0" />
+    <FaGlasses className="text-yellow-800 w-8 h-8 z-10 drop-shadow" />
+    <motion.div
+      className="absolute top-0 left-[-50%] w-[200%] h-full bg-gradient-to-r from-transparent via-white/30 to-transparent rotate-12"
+      animate={{ x: ["-100%", "100%"] }}
+      transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+    />
+  </motion.div>
+    description:
+      "Comfort meets clarity — find your perfect contact lens fit, whether daily, monthly, or colored lenses!",
+    details: (
       <>
-        <p className="mb-2">
-          Comfort meets clarity — find your perfect contact lens fit, whether
-          daily, monthly, or colored lenses!
-        </p>
-        <p className="font-semibold mb-1">We specialize in fitting:</p>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            <strong>Scleral Lenses:</strong> Complex conditions like keratoconus,
-            ocular surface disease, etc.
-          </li>
-          <li>
-            <strong>PROSE Lenses:</strong> For extreme corneal scarring or
-            irregularities.
-          </li>
-          <li>
-            <strong>Custom Soft & RGP Lenses:</strong> For high refractive
-            errors, irregular corneas, and lifestyle needs.
-          </li>
+        <strong>We specialize in fitting a wide range of specialty contact lenses, including:</strong>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+       
+           <li>
+        <strong>Scleral Lenses:</strong> Ideal for complex corneal conditions like keratoconus, post-LASIK ectasia, ocular surface disease, and severe dry eye. These lenses vault over the cornea, providing both vision correction and therapeutic relief.
+      </li>
+      <li>
+        <strong>PROSE Lenses:</strong> Advanced prosthetic devices designed for patients with extreme ocular surface irregularities or scarring.
+      </li>
+      <li>
+        <strong>Custom Soft & RGP Lenses:</strong> For high refractive errors, irregular corneas, or specific lifestyle needs.
+      </li>
         </ul>
         <p className="mt-2">
-          Each fit is customized with corneal topography and slit lamp
-          evaluations.
+         Each fit is customized with corneal topography and slit lamp evaluations to ensure optimal comfort and performance.
         </p>
       </>
     ),
   },
-  {
-    title: "Vision Therapy for Amblyopia (Lazy Eye)",
-    icon: <FaRegEye className="text-3xl text-red-500" />,
-    description: (
-      <>
-        <p className="mb-2">
-          We offer evidence-based therapy for amblyopia, strabismus, or other
-          binocular vision issues. Our programs enhance coordination and depth
-          perception — going beyond just glasses.
-        </p>
-        <p className="font-semibold mb-1">Key therapy benefits:</p>
-        <ul className="list-disc list-inside space-y-1">
-          <li>Targeted therapy for children & adults</li>
-          <li>Improves alignment (Strabismus & Eye Turn)</li>
-          <li>Enhances depth perception & binocular vision</li>
-          <li>Strengthens tracking & visual skills</li>
-        </ul>
-      </>
-    ),
-  },
-  {
+
+{
+ 
+  title: "Vision Therapy for Amblyopia (Lazy Eye)",
+  color: "from-yellow-400 to-yellow-600",
+  icon: React.createElement(FaBrain, {
+    className: "text-yellow-600 w-8 h-8 animate-pulse", // animate-pulse for soft future animation
+    "aria-hidden": "true",
+  }),
+  description:
+    "We offer evidence-based vision therapy programs for children and adults with amblyopia, strabismus, or other binocular vision issues. Our digital and interactive therapy improves visual coordination, eye teaming, and depth perception — enhancing vision beyond just glasses.",
+  details: (
+    <>
+      <p>
+        <strong>Key therapy benefits include:</strong>
+      </p>
+      <ul className="list-disc list-inside mt-2 text-gray-700">
+        <li>
+          <strong>Targeted for Amblyopia:</strong> Effective therapy for 'lazy
+          eye' in both children and adults.
+        </li>
+        <li>
+          <strong>Strabismus & Eye Turn:</strong> Improve alignment and
+          coordination between both eyes.
+        </li>
+        <li>
+          <strong>Enhanced Depth Perception:</strong> Train your brain and eyes
+          to work together in 3D space.
+        </li>
+        <li>
+          <strong>Binocular Vision Support:</strong> Strengthen eye teaming for
+          better focus and tracking.
+        </li>
+        <li>
+          <strong>Functional Vision Improvement:</strong> Go beyond glasses with
+          lasting visual skill gains.
+        </li>
+      </ul>
+    </>
+  ),
+
+},
+  
+{
     title: "Low Vision Aids",
-    icon: <FaEyeDropper className="text-3xl text-purple-600" />,
-    description: (
+    color: "from-purple-400 to-purple-600",
+    icon: <FaSearchPlus className="text-purple-600 w-8 h-8" aria-hidden="true" />,
+    description:
+      "We provide customized low vision solutions to help patients with permanent vision loss live more independently and comfortably.",
+    details: (
       <>
-        <p className="mb-2">
-          We provide customized solutions to help patients with permanent vision
-          loss live more independently and comfortably.
-        </p>
-        <p className="font-semibold mb-1">Solutions include:</p>
-        <ul className="list-disc list-inside space-y-1">
-          <li>Magnifying Devices</li>
-          <li>High-Powered Reading Aids</li>
-          <li>Contrast-Enhancing Filters</li>
-          <li>Assistive Tools for Daily Living</li>
+        <strong>Tailored solutions for conditions like macular degeneration, diabetic retinopathy, or retinal dystrophies:</strong>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li><strong>Magnifying Devices:</strong> Enhance near and distance vision for reading and daily tasks.</li>
+          <li><strong>High-Powered Reading Aids:</strong> Specialized lenses and tools to boost reading clarity.</li>
+          <li><strong>Contrast-Enhancing Filters:</strong> Improve visual definition and safety in low-light environments.</li>
+          <li><strong>Assistive Tools for Daily Living:</strong> Practical tools and training to improve independence.</li>
         </ul>
         <p className="mt-2">
-          Our goal: help you get the most out of your remaining vision.
+          Our goal is to help you make the most of your remaining vision and enhance your quality of life with smart, effective support.
         </p>
       </>
     ),
   },
   {
     title: "Dry Eye Evaluation & Management",
-    icon: <FaTint className="text-3xl text-blue-500" />,
-    description: (
+    color: "from-blue-400 to-blue-600",
+    icon: <FaEyeDropper className="text-blue-600 w-8 h-8" aria-hidden="true" />,
+    description:
+      "Chronic dry eyes can cause discomfort, blurred vision, and damage to your eyes. At Blinkers, we offer a comprehensive dry eye evaluation to identify the root causes and develop an effective management plan.",
+    details: (
       <>
-        <p className="mb-2">
-          Chronic dry eyes can cause discomfort, blurred vision, and eye damage.
-          We identify the root causes and offer an effective plan.
-        </p>
-        <p className="font-semibold mb-1">Our dry eye workup includes:</p>
-        <ul className="list-disc list-inside space-y-1">
-          <li>Tear Film Analysis</li>
-          <li>Meibomian Gland Assessment</li>
-          <li>Fluorescein Staining</li>
-          <li>Environmental & Lifestyle Screening</li>
+        <strong>Our dry eye workup includes:</strong>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li><strong>Tear Film Analysis:</strong> Evaluating the quality and quantity of your tears to detect dryness.</li>
+          <li><strong>Meibomian Gland Assessment:</strong> Checking the glands that secrete oil into your tears to prevent evaporation.</li>
+          <li><strong>Fluorescein Staining:</strong> A test to check for damage to the ocular surface caused by dryness.</li>
+          <li><strong>Environmental & Lifestyle Screening:</strong> Identifying external factors and habits contributing to dry eyes.</li>
         </ul>
         <p className="mt-2">
-          Based on findings, we create a personalized treatment plan that may
-          include lubricants, in-office therapies, and more.
+          Based on these findings, we create a personalized treatment plan that includes lubricants, in-office therapies, lid hygiene, and preventive care tailored to your needs.
         </p>
       </>
     ),
   },
+
 ];
 
-export default function ServicesSection() {
+export default function Services() {
   return (
-    <section className="py-16 px-4 md:px-8 bg-white text-gray-800">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-green-700 mb-2">
-          Our Eye Care Services
-        </h2>
-        <p className="text-gray-500 italic">
-          At <span className="font-semibold text-green-700">Blinkers</span>, we
-          go beyond basic eye tests — we provide comprehensive, personalized
-          care for every eye at every stage of life.
-        </p>
-        <p className="text-gray-500 mt-1">
-          Our range of services includes:
-        </p>
-      </div>
+    <main className="p-10 bg-gray-50 min-h-screen">
+      <h1
+        className="text-5xl font-extrabold text-center mb-6 text-[#7a9f90]"
+        aria-label="Our Eye Care Services"
+      >
+        Our Eye Care Services
+      </h1>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-xl transition"
+    <p className="max-w-3xl mx-auto text-center text-gray-700 mb-12 text-lg italic">
+  At <span className="text-2xl font-extrabold text-[#7a9f90] drop-shadow-md">Blinkers</span>, we go beyond basic eye tests — we provide comprehensive, personalized care for every eye at every stage of life. Our range of services includes:
+</p>
+
+
+      <section
+        className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto"
+        aria-label="Service cards"
+      >
+        {services.map(({ title, color, icon, description, details }, idx) => (
+          <article
+            key={idx}
+            className={`bg-white bg-opacity-70 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col gap-5 border-l-8 border-gradient-to-b ${color} hover:shadow-2xl hover:scale-[1.05] transition-transform duration-300 cursor-pointer`}
+            role="region"
+            aria-labelledby={`service-${idx}`}
           >
-            <div className="flex items-center gap-3 mb-4">
-              {service.icon}
-              <h3 className="text-xl font-bold text-gray-800">{service.title}</h3>
-            </div>
-            <div className="text-sm text-gray-700">{service.description}</div>
-          </div>
+            <header className="flex items-center gap-4">
+              <div className="flex-shrink-0">{icon}</div>
+              <h2
+                id={`service-${idx}`}
+                className="text-3xl font-semibold text-gray-800"
+              >
+                {title}
+              </h2>
+            </header>
+            <p className="text-gray-800 font-semibold">{description}</p>
+            <div className="text-gray-700">{details}</div>
+          </article>
         ))}
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
+
