@@ -131,57 +131,54 @@ const Doctor: React.FC = () => {
 
       {/* Modal outside main layout to prevent scroll jump */}
       <AnimatePresence>
-        {modalOpen && (
-          <motion.div
-            className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={closeModal}
-            aria-modal="true"
-            role="dialog"
-            aria-labelledby="modal-title"
+  {modalOpen && (
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={closeModal}
+      aria-modal="true"
+      role="dialog"
+    >
+      <motion.div
+        className="bg-white rounded-xl p-8 max-w-md w-full relative"
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.95, opacity: 0 }}
+        onClick={(e) => e.stopPropagation()} // prevents closing when clicking inside modal
+      >
+        <h2 className="text-2xl font-bold text-[#7a9f90] mb-4">
+          Book Consultation
+        </h2>
+        <p className="mb-6 text-[#364b3c]">
+          To book a consultation with Monil Champaneria, please call{" "}
+          <a
+            href="tel:+919860849086"
+            className="text-[#527a65] underline hover:text-[#405941]"
           >
-            <motion.div
-              className="bg-white rounded-xl p-8 max-w-md w-full relative"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <h2
-                id="modal-title"
-                className="text-2xl font-bold text-[#7a9f90] mb-4"
-              >
-                Book Consultation
-              </h2>
-              <p className="mb-6 text-[#364b3c]">
-                To book a consultation with Monil Champaneria, please call{" "}
-                <a
-                  href="tel:+919860849086"
-                  className="text-[#527a65] underline hover:text-[#405941]"
-                >
-                  +91 98608 49086
-                </a>{" "}
-                or email{" "}
-                <a
-                  href="mailto:blinkers.in@gmail.com"
-                  className="text-[#527a65] underline hover:text-[#405941]"
-                >
-                  blinkers.in@gmail.com
-                </a>
-                .
-              </p>
-              <button
-                onClick={closeModal}
-                className="px-6 py-3 bg-gradient-to-r from-[#7a9f90] to-[#a2b9ae] text-white rounded-full shadow hover:scale-105 transition-transform duration-300"
-              >
-                Close
-              </button>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            +91 98608 49086
+          </a>{" "}
+          or email{" "}
+          <a
+            href="mailto:blinkers.in@gmail.com"
+            className="text-[#527a65] underline hover:text-[#405941]"
+          >
+            blinkers.in@gmail.com
+          </a>
+          .
+        </p>
+        <button
+          onClick={closeModal}
+          className="px-6 py-3 bg-gradient-to-r from-[#7a9f90] to-[#a2b9ae] text-white rounded-full shadow hover:scale-105 transition-transform duration-300"
+        >
+          Close
+        </button>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </>
   );
 };
