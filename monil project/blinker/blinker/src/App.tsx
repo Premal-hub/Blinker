@@ -142,6 +142,7 @@ const servicesList = [
   { title: "Contact Lens", image: Cataract, desc: "Precise fittings, wide lens options & clear vision every day." },
   { title: "Optical Services", image: Optical, desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
   { title: "Pediatric Eye Care", image: Pediatric, desc: "Specialized care for children's vision." },
+  {title: "Pediatric Eye Care", image: Pediatric, desc: "Myopia management and eye care tailored for children’s growing vision needs."},
 
 
 ];
