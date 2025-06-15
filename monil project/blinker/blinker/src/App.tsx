@@ -110,7 +110,7 @@ const Footer = () => (
 </div>
 
 
-        <span className="font-black">blinkers</span> Eye Care 
+        <span className="font-black">blinkers</span> 
       </div>
       <div>
         <p className="text-xs mt-2">
@@ -167,7 +167,7 @@ const Hero = () => (
           See the Future<br /><span className="text-white/80">Clearly</span>
         </h1>
         <p className="text-xl text-white/90 mb-8">
-          Blinkers delivers world-class eye care with compassion, precision, and vision technology excellence.
+          Blinkers delivers world-class eye care service with compassion, precision, and vision technology excellence.
         </p>
         <Link to="/services" className="inline-block bg-white hover:bg-[#eaf2ee] text-[#3c544b] px-8 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 border border-[#3c544b]">
           Explore Services
