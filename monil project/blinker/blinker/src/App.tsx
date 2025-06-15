@@ -11,7 +11,7 @@ import DoctorPage from "./DoctorPage";
 import FAQPage from "./FAQPage";
 import ContactPage from "./ContactPage";
 
-import Comprehensive from "./PHOTO-2025-06-11-13-09-51.jpg";
+import Comprehensive from "./PHOTO-2025-06-15-18-43-49.jpg";
 import Optical from "./PHOTO-2025-06-15-18-34-24.jpg";
 import Pediatric from "./PediatricEyecare_20221213_4322.webp";
 import Cataract from "./cataract-senior.webp";
