@@ -82,10 +82,7 @@ const faqData = [
     question: "Do you offer child eye checkups?",
     answer: "Yes, we have a dedicated pediatric vision program and playful testing tools for kids.",
   },
-  {
-    question: "What if I need surgery?",
-    answer: "We refer to top-tier surgical specialists for cataracts and LASIK procedures.",
-  },
+
   {
     question: "Can I walk in without appointment?",
     answer: "Yes, walk-ins are accepted, but appointments help reduce wait time.",
