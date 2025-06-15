@@ -139,8 +139,8 @@ const Footer = () => (
 // ----------------------
 const servicesList = [
   { title: "Comprehensive Eye Exams", image: Comprehensive, desc: "Thorough eye health and vision assessments." },
-   { title: "Contact Lens", image: Cataract, desc: "Precise fittings, wide lens options & clear vision every day." },
-  { title: "Optical Services", image: , desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
+  { title: "Contact Lens", image: Cataract, desc: "Precise fittings, wide lens options & clear vision every day." },
+  { title: "Optical Services", image: Optical, desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
   { title: "Pediatric Eye Care", image: Pediatric, desc: "Specialized care for children's vision." },
 
 
