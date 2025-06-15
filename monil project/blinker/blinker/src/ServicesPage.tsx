@@ -51,7 +51,7 @@ icon: (
     ),
   },
   {
-    title: "Eye Number Testing",
+    title: "Myopia Control Clinic",
     color: "from-green-400 to-green-600",
     // icon: <FaCheckCircle className="text-green-600 w-8 h-8" aria-hidden="true" />,
 
@@ -99,18 +99,22 @@ icon: (
 
     
     description:
-      "Say goodbye to guesswork! Our precise digital instruments measure your exact lens power with incredible accuracy.",
-    details: (
-      <>
-        <strong>Experience includes:</strong>
-        <ul className="list-disc list-inside mt-2 text-gray-700">
-          <li>Instant, real-time vision simulations</li>
-          <li>Custom lens recommendations tailored to your needs</li>
-          <li>Comfortable & quick testing process</li>
-        </ul>
-        <p className="mt-2">Step into a world of clear sight with confidence!</p>
-      </>
-    ),
+    "Dedicated care to slow childhood myopia progression and protect long-term eye health using advanced, evidence-based therapies.",
+  details: (
+    <>
+      <strong>Our myopia control program includes:</strong>
+      <ul className="list-disc list-inside mt-2 text-gray-700">
+        <li><strong>Customized Atropine Therapy:</strong> Low-dose drops to slow axial eye growth.</li>
+        <li><strong>Myopia Control Lenses:</strong> Special lenses like ZEISS MyoCare or MiYOSMART to manage progression.</li>
+        <li><strong>Orthokeratology (Ortho-K):</strong> Overnight lenses that gently reshape the cornea.</li>
+        <li><strong>Lifestyle & Visual Hygiene:</strong> Guidance on screen use, posture, and outdoor activity.</li>
+        <li><strong>Regular Follow-Ups:</strong> Ongoing monitoring and care tailored to your child’s needs.</li>
+      </ul>
+      <p className="mt-2">
+        Our goal is not just to improve vision—but to preserve your child’s future eye health with personalized, non-surgical solutions.
+      </p>
+    </>
+  ),
   },
   {
     title: "Advanced Contact Lens Fitting",
