@@ -97,9 +97,9 @@ const Contact: React.FC = () => {
           <div className="mt-6">
             <h3 className="text-xl font-semibold">Opening Hours:</h3>
             <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-              <li>Mon – Fri: 9:00 AM – 6:00 PM</li>
-              <li>Sat: 10:00 AM – 4:00 PM</li>
-              <li>Sun: Closed</li>
+              <li>Mon to sat 10:00am to 2:30pm and 4:00pm to 20:30pm</li>
+              <li>Sunday 11:00am to 2:00pm</li>
+{/*               <li> in 24hrs</li> */}
             </ul>
           </div>
         </motion.div>
