@@ -139,7 +139,7 @@ const Footer = () => (
 const servicesList = [
   { title: "Comprehensive Eye Exams", image: Comprehensive, desc: "Thorough eye health and vision assessments." },
    { title: "Contact Lens", image: Cataract, desc: "Precise fittings, wide lens options & clear vision every day." },
-  { title: "Optical Services", image: "https://www.google.com/maps/place/Blinkers+eye+clinic+and+Optical+Showroom/@21.1908946,72.7967791,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPWl5dKF5NbdsmtbCjpeZhqa-KX_-uy0uD9o4vs!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fp%2FAF1QipPWl5dKF5NbdsmtbCjpeZhqa-KX_-uy0uD9o4vs%3Dw397-h298-k-no!7i4032!8i3024!4m20!1m10!3m9!1s0x3be04d10551c0299:0xb7e1e9aa719a0604!2sBlinkers+eye+clinic+and+Optical+Showroom!8m2!3d21.1908946!4d72.7967791!10e5!14m1!1BCgIgARICGAI!16s%2Fg%2F11vjts576v!3m8!1s0x3be04d10551c0299:0xb7e1e9aa719a0604!8m2!3d21.1908946!4d72.7967791!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11vjts576v?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D#", desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
+  { title: "Optical Services", image: "", desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
   { title: "Pediatric Eye Care", image: Pediatric, desc: "Specialized care for children's vision." },
 
 
