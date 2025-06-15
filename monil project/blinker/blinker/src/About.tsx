@@ -121,7 +121,7 @@ const About: React.FC = () => {
                 <Counter value={15} label="Specialized Areas of Expertise" />
                 <Counter value={500} label="Satisfied Patients Served" duration={2.5} />
                 <Counter value={5} label="Years of Clinical Excellence" />
-                <Counter value={20} label="Ophthalmologists Trained & Mentored" />
+                <Counter value={3} label="Awards and accolades" />
               </>
             )}
           </div>
