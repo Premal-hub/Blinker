@@ -13,8 +13,8 @@ import ContactPage from "./ContactPage";
 
 import Comprehensive from "./PHOTO-2025-06-15-18-43-49.jpg";
 import Optical from "./PHOTO-2025-06-15-18-34-24.jpg";
-import Pediatric from "./PediatricEyecare_20221213_4322.webp";
-import Cataract from "./cataract-senior.webp";
+// import  Cataract from "./PediatricEyecare_20221213_4322.webp";
+import Pediatric Cataract from "./cataract-senior.webp";
 import Logo from "./Screenshot 2025-02-04 at 7.44.56 PM.png"; 
 
 //im;port scroll up
@@ -140,7 +140,7 @@ const Footer = () => (
 const servicesList = [
   { title: "Comprehensive Eye Exams", image: Comprehensive, desc: "Thorough eye health and vision assessments." },
    { title: "Contact Lens", image: Cataract, desc: "Precise fittings, wide lens options & clear vision every day." },
-  { title: "Optical Services", image: Optical, desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
+  { title: "Optical Services", image: , desc: "Trendy eyewear, expert fittings, and personalized lens solutions." },
   { title: "Pediatric Eye Care", image: Pediatric, desc: "Specialized care for children's vision." },
 
 
